@@ -1,0 +1,57 @@
+const Cards = [
+  {
+    id: 1,
+    img: require("../../../images/hornpc.png"),
+    header: "Marketing",
+    tag1: "Digital Marketing",
+    tag2: "Designing",
+    tag3: "Marketing Consulting",
+    tag4: "Event Management",
+  },
+  {
+    id: 2,
+    img: require("../../../images/moneybag.png"),
+    header: "Finance",
+    tag1: "Specialzied Accounting",
+    tag2: "Chief Financial Officer",
+    tag3: "Finance Advisory",
+    tag4: "General Accounting",
+  },
+  {
+    id: 3,
+    img: require("../../../images/manheadphone.png"),
+    header: "Consultants",
+    tag1: "General Consultant",
+    tag2: "Specialized Consultant",
+    tag3: "Management Designations",
+    tag4: "Specialized Designations",
+  },
+  {
+    id: 4,
+    img: require("../../../images/pentablet.png"),
+    header: "Media",
+    tag1: "Photographer",
+    tag2: "Videographer",
+    tag3: "AV and Sound Engineer",
+    tag4: "Production Engineer",
+  },
+  {
+    id: 5,
+    img: require("../../../images/touchpc.png"),
+    header: "IT",
+    tag1: "Photographer",
+    tag2: "Videographer",
+    tag3: "AV and Sound Engineer",
+    tag4: "Production Engineer",
+  },
+  {
+    id: 6,
+    img: require("../../../images/phonelike.png"),
+    header: "Social",
+    tag1: "Lifestyle Blogger",
+    tag2: "Fitness Coach",
+    tag3: "Dance Instructor",
+  },
+];
+
+export default Cards;
