@@ -5,7 +5,9 @@ import { FAQOne } from "../containers/FAQ/Data";
 const FAQ = () => {
   return (
     <>
-      <FAQsection {...FAQOne} />
+      <div>
+        <FAQsection {...FAQOne} />
+      </div>
     </>
   );
 };

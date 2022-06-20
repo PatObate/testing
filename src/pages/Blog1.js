@@ -5,7 +5,9 @@ import { BlogPost } from "../containers/BlogPage/Data";
 const Blog1 = () => {
   return (
     <>
-      <BlogPage {...BlogPost} />
+      <div>
+        <BlogPage {...BlogPost} />
+      </div>
     </>
   );
 };
