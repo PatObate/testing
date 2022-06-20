@@ -7,8 +7,10 @@ import { BlogCommunity } from "../containers/Blog/BlogFreelancerSection/data";
 const Blog = () => {
   return (
     <>
-      <BlogFirstSection {...BlogOne} />
-      <BlogFreeLancerSection {...BlogCommunity} />
+      <div>
+        <BlogFirstSection {...BlogOne} />
+        <BlogFreeLancerSection {...BlogCommunity} />
+      </div>
     </>
   );
 };

@@ -28,6 +28,7 @@ function App() {
       <ChatBot />
       <PopSaleEffect />
       <ScrollToTop />
+      <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/blog/blog1" component={Blog1} />
@@ -35,6 +36,7 @@ function App() {
         <Route exact path="/faq" component={FAQ} />
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/contact" component={ContactUs} />
+      </Switch>
       <Footer />
     </>
   );

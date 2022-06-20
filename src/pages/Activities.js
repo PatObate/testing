@@ -7,8 +7,10 @@ import { ActivityCommunity } from "../containers/Activites/ActivityFreelancerSec
 const Activities = () => {
   return (
     <>
-      <ActivityFirstSection {...ActivityOne} />
-      <ActivityFreeLancerSection {...ActivityCommunity} />
+      <div>
+        <ActivityFirstSection {...ActivityOne} />
+        <ActivityFreeLancerSection {...ActivityCommunity} />
+      </div>
     </>
   );
 };

@@ -26,18 +26,23 @@ const Home = () => {
   };
   return (
     <>
-      <HomeButton />
-      <ModalGetStarted showModal2={showModal2} setShowModal2={setShowModal2} />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <NavbarHome toggle={toggle} />
-      <HeroSection toggleModal={openModal2} />
-      <ClientSection />
-      <SlideOne />
-      <SlideTwo />
-      <HowSection />
-      <PlansSection toggleModal={openModal2} />
-      <CommunitySection toggleModal={openModal2} />
-      <ConnectSection />
+      <div>
+        <HomeButton />
+        <ModalGetStarted
+          showModal2={showModal2}
+          setShowModal2={setShowModal2}
+        />
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <NavbarHome toggle={toggle} />
+        <HeroSection toggleModal={openModal2} />
+        <ClientSection />
+        <SlideOne />
+        <SlideTwo />
+        <HowSection />
+        <PlansSection toggleModal={openModal2} />
+        <CommunitySection toggleModal={openModal2} />
+        <ConnectSection />
+      </div>
     </>
   );
 };
