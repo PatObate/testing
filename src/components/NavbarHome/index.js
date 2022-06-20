@@ -23,12 +23,6 @@ const NavbarHome = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  function refreshPage() {
-    setTimeout(function () {
-      window.location.reload();
-    }, 0.01);
-  }
-
   useEffect(() => {
     const controlNavbar = () => {
       if (typeof window !== "undefined") {
@@ -79,7 +73,7 @@ const NavbarHome = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks2 to="/faq" onClick={refreshPage}>
+                <NavLinks2 to="/faq">
                   FAQ
                 </NavLinks2>
               </NavItem>
