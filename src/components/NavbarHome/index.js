@@ -90,7 +90,7 @@ const NavbarHome = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks2 to="/blog" onClick={refreshPage}>
+                <NavLinks2 to="/blog" >
                   Blog
                 </NavLinks2>
               </NavItem>
