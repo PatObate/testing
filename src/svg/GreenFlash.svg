@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="44.724" height="44.724" viewBox="0 0 44.724 44.724">
-  <g id="vuesax_bold_flash-circle" data-name="vuesax/bold/flash-circle" transform="translate(0 0)">
-    <g id="flash-circle" transform="translate(0 0)">
-      <path id="Vector" d="M18.635,0A18.635,18.635,0,1,0,37.27,18.635,18.642,18.642,0,0,0,18.635,0Zm6.988,19.287L18.691,27.17l-.82.932c-1.137,1.286-2.069.95-2.069-.783V19.94H12.635c-1.435,0-1.826-.876-.876-1.957L18.691,10.1l.82-.932c1.137-1.286,2.069-.95,2.069.783v7.38h3.168C26.182,17.331,26.574,18.207,25.623,19.287Z" transform="translate(3.671 3.727)" fill="#00d0a8"/>
-      <path id="Vector-2" data-name="Vector" d="M0,0H44.724V44.724H0Z" transform="translate(44.724 44.724) rotate(180)" fill="none" opacity="0"/>
-    </g>
-  </g>
-</svg>
