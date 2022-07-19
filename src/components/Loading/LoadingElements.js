@@ -25,10 +25,13 @@ export const LoadingLogoWrapper = styled.div`
 `;
 
 export const LoadingLogo = styled.img`
-  width: 50%;
+  width: 20%;
   height: auto;
   margin: auto;
   display: block;
+  @media screen and (max-width: 690px) {
+    width: 50%;
+  }
 `;
 
 export const NathanMusic = styled.audio``;
