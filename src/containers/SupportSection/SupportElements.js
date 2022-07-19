@@ -268,6 +268,7 @@ export const LinkWrapper = styled(Link)`
   transition: 2s all ease;
   @media screen and (max-width: 690px) {
     width: auto;
+    height: 120vh;
   }
 `;
 
@@ -284,6 +285,7 @@ export const LinkWrapper2 = styled(Link)`
   transition: 2s all ease;
   @media screen and (max-width: 690px) {
     width: auto;
+    height: 120vh;
   }
 `;
 

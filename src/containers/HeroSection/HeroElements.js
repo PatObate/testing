@@ -202,5 +202,6 @@ export const LinkWrapper = styled(Link)`
 
   @media screen and (max-width: 690px) {
     width: auto;
+    height: 120vh;
   }
 `;
