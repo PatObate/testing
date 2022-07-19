@@ -46,7 +46,7 @@ const containerVariants = {
   },
 };
 
-const ExploreSection = ({
+const ExploreSection3 = ({
   mainheader,
   subheader,
   header,
@@ -317,6 +317,20 @@ const ExploreSection = ({
                 </CardWrapperMob>
                 <CardWrapperMob>
                   <CardImg2Mob
+                    highlight={toggleState === 3 ? true : false}
+                    onClick={() => toggleTab(3)}
+                    style={{
+                      background: `url(${img3})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <CardHeaderMob>{header3}</CardHeaderMob>
+                  </CardImg2Mob>
+                </CardWrapperMob>
+                <CardWrapperMob>
+                  <CardImg2Mob
                     highlight={toggleState === 4 ? true : false}
                     onClick={() => toggleTab(4)}
                     style={{
@@ -329,6 +343,34 @@ const ExploreSection = ({
                     <CardHeaderMob>{header4}</CardHeaderMob>
                   </CardImg2Mob>
                 </CardWrapperMob>
+                <CardWrapperMob>
+                  <CardImg2Mob
+                    highlight={toggleState === 5 ? true : false}
+                    onClick={() => toggleTab(5)}
+                    style={{
+                      background: `url(${img5})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <CardHeaderMob>{header5}</CardHeaderMob>
+                  </CardImg2Mob>
+                </CardWrapperMob>
+                <CardWrapperMob>
+                  <CardImg2Mob
+                    highlight={toggleState === 6 ? true : false}
+                    onClick={() => toggleTab(6)}
+                    style={{
+                      background: `url(${img6})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <CardHeaderMob>{header6}</CardHeaderMob>
+                  </CardImg2Mob>
+                </CardWrapperMob>
               </Slider>
             </CardContainer2Mob>
           </PoeWrapper>
@@ -338,4 +380,4 @@ const ExploreSection = ({
   );
 };
 
-export default ExploreSection;
+export default ExploreSection3;

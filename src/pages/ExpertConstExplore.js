@@ -1,12 +1,12 @@
 import React from "react";
-import ExploreSection from "../containers/ExploreSection";
+import ExploreSection2 from "../containers/ExploreSection2";
 import { CardText6 } from "../containers/ExploreSection/data";
 
 const ExpertConstExplore = () => {
   return (
     <>
       <div>
-        <ExploreSection {...CardText6} />
+        <ExploreSection2 {...CardText6} />
       </div>
     </>
   );

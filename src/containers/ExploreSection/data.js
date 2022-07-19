@@ -20,21 +20,6 @@ export const CardText1 = {
   mobnone2: "true",
 };
 
-export const CardsMob1 = [
-  {
-    id: 1,
-    imgmob: require("../../images/peo-gcc.jpg"),
-  },
-  {
-    id: 2,
-    imgmob: require("../../images/peo-global.jpg"),
-  },
-  {
-    id: 3,
-    imgmob: require("../../images/peo-service.jpg"),
-  },
-];
-
 export const CardText2 = {
   mainheader: "HR OUTSOURCING",
   subheader:

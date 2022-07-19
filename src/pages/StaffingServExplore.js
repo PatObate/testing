@@ -1,12 +1,12 @@
 import React from "react";
-import ExploreSection from "../containers/ExploreSection";
+import ExploreSection2 from "../containers/ExploreSection2";
 import { CardText3 } from "../containers/ExploreSection/data";
 
 const StaffingServExplore = () => {
   return (
     <>
       <div>
-        <ExploreSection {...CardText3} />
+        <ExploreSection2 {...CardText3} />
       </div>
     </>
   );

@@ -15,14 +15,17 @@ export const LoadingBackground = styled.div`
 `;
 
 export const LoadingLogoWrapper = styled.div`
-  max-width: 100%;
+  width: 100%;
   height: auto;
   position: absolute;
   top: 2.6vw;
+  @media screen and (max-width: 690px) {
+    top: 40px;
+  }
 `;
 
 export const LoadingLogo = styled.img`
-  width: 20%;
+  width: 50%;
   height: auto;
   margin: auto;
   display: block;
@@ -51,4 +54,7 @@ export const TextWrapper = styled.div`
   width: 20.23vw;
   /* width: 350px; */
   position: relative;
+  @media screen and (max-width: 690px) {
+    width: 350px;
+  }
 `;

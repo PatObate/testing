@@ -165,6 +165,100 @@ export const Triangle6 = styled(NavLink)`
     display: none;
   }
 `;
+export const TextImg1 = styled.img`
+  @media screen and (min-width: 691px) {
+    display: none;
+  }
+  @media screen and (max-width: 690px) {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: -2.44vw;
+    width: 16.41vw;
+    height: 3.23vw;
+    /* width: 315px;
+  height: 62px; */
+  }
+`;
+export const TextImg2 = styled.img`
+  @media screen and (min-width: 691px) {
+    display: none;
+  }
+  @media screen and (max-width: 690px) {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 3.57vw;
+    left: -2.57vw;
+    width: 6.04vw;
+    height: 11.61vw;
+    /* width: 116px;
+  height: 223px; */
+  }
+`;
+export const TextImg3 = styled.img`
+  @media screen and (min-width: 691px) {
+    display: none;
+  }
+  @media screen and (max-width: 690px) {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: 1.57vw;
+    left: -1.88vw;
+    width: 5.94vw;
+    height: 11.77vw;
+    /* width: 114px;
+  height: 226px; */
+  }
+`;
+export const TextImg4 = styled.img`
+  @media screen and (min-width: 691px) {
+    display: none;
+  }
+  @media screen and (max-width: 690px) {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: -2.43vw;
+    width: 11.98vw;
+    height: 1.98vw;
+    /* width: 230px;
+  height: 38px; */
+  }
+`;
+export const TextImg5 = styled.img`
+  @media screen and (min-width: 691px) {
+    display: none;
+  }
+  @media screen and (max-width: 690px) {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: -0.43vw;
+    right: -1.88vw;
+    width: 8.8vw;
+    height: 12.97vw;
+    /* width: 169px;
+  height: 249px; */
+  }
+`;
+export const TextImg6 = styled.img`
+  @media screen and (min-width: 691px) {
+    display: none;
+  }
+  @media screen and (max-width: 690px) {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 2.57vw;
+    right: -2.88vw;
+    width: 5.94vw;
+    height: 13.91vw;
+    /* width: 114px;
+  height: 267px; */
+  }
+`;
 
 export const NavImg = styled(NavLink)`
   position: absolute;

@@ -16,6 +16,12 @@ import {
   NavImg4,
   NavImg5,
   NavImg6,
+  TextImg1,
+  TextImg2,
+  TextImg3,
+  TextImg4,
+  TextImg5,
+  TextImg6,
   Triangle1,
   Triangle2,
   Triangle3,
@@ -29,6 +35,12 @@ import Outsourcing from "../../svgs/outsourcing";
 import Peo from "../../svgs/peo";
 import Remote from "../../svgs/remote";
 import Staffing from "../../svgs/staffing";
+import HrTechImg from "../../images/HRTechnologyCurve.png";
+import ExpertImg from "../../images/ExpertConsultingCurve.png";
+import OutsourcingImg from "../../images/HROutsourcingCurve.png";
+import PeoImg from "../../images/PEO&EORServicesCurve.png";
+import RemoteImg from "../../images/RemoteWorkforceCurve.png";
+import StaffingImg from "../../images/StaffingServicesCurve.png";
 
 const Navigation = () => {
   const [isOn, setIsOn] = useState(false);
@@ -76,6 +88,12 @@ const Navigation = () => {
         </MenuSub6>
         <MenuNav>
           <Circle animationData={circle} />
+          <TextImg1 src={PeoImg} alt="pic" />
+          <TextImg2 src={OutsourcingImg} alt="pic2" />
+          <TextImg3 src={StaffingImg} alt="pic3" />
+          <TextImg4 src={HrTechImg} alt="pic4" />
+          <TextImg5 src={RemoteImg} alt="pic5" />
+          <TextImg6 src={ExpertImg} alt="pic6" />
           <NavImg
             to="/hrtechnology"
             onMouseEnter={handleToggle4}

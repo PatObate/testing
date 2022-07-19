@@ -46,7 +46,7 @@ const containerVariants = {
   },
 };
 
-const ExploreSection = ({
+const ExploreSection2 = ({
   mainheader,
   subheader,
   header,
@@ -329,6 +329,20 @@ const ExploreSection = ({
                     <CardHeaderMob>{header4}</CardHeaderMob>
                   </CardImg2Mob>
                 </CardWrapperMob>
+                <CardWrapperMob>
+                  <CardImg2Mob
+                    highlight={toggleState === 5 ? true : false}
+                    onClick={() => toggleTab(5)}
+                    style={{
+                      background: `url(${img5})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <CardHeaderMob>{header5}</CardHeaderMob>
+                  </CardImg2Mob>
+                </CardWrapperMob>
               </Slider>
             </CardContainer2Mob>
           </PoeWrapper>
@@ -338,4 +352,4 @@ const ExploreSection = ({
   );
 };
 
-export default ExploreSection;
+export default ExploreSection2;

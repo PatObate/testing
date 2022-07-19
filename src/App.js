@@ -49,29 +49,29 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
           <Route path="/" element={<Intro />} />
-          <Route path="landing" element={<Home />} />
-          <Route path="support" element={<Support />} />
-          <Route path="special" element={<Special />} />
-          <Route path="menu" element={<Menu />} />
-          <Route path="poeandeor" element={<Peo />} />
-          <Route path="hroutsourcing" element={<HrOut />} />
-          <Route path="staffingservices" element={<StaffingServices />} />
-          <Route path="hrtechnology" element={<HrTechnology />} />
-          <Route path="remoteworkforce" element={<RemoteWorkforce />} />
-          <Route path="expertconsulting" element={<ExpertConsolting />} />
-          <Route path="poeandeor/explore" element={<PoeExplore />} />
-          <Route path="hroutsourcing/explore" element={<HrOutExplore />} />
+          <Route path="/landing" element={<Home />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/special" element={<Special />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/poeandeor" element={<Peo />} />
+          <Route path="/hroutsourcing" element={<HrOut />} />
+          <Route path="/staffingservices" element={<StaffingServices />} />
+          <Route path="/hrtechnology" element={<HrTechnology />} />
+          <Route path="/remoteworkforce" element={<RemoteWorkforce />} />
+          <Route path="/expertconsulting" element={<ExpertConsolting />} />
+          <Route path="/poeandeor/explore" element={<PoeExplore />} />
+          <Route path="/hroutsourcing/explore" element={<HrOutExplore />} />
           <Route
-            path="staffingservices/explore"
+            path="/staffingservices/explore"
             element={<StaffingServExplore />}
           />
-          <Route path="hrtechnology/explore" element={<HrTechExplore />} />
+          <Route path="/hrtechnology/explore" element={<HrTechExplore />} />
           <Route
-            path="remoteworkforce/explore"
+            path="/remoteworkforce/explore"
             element={<RemoteWorkExplore />}
           />
           <Route
-            path="expertconsulting/explore"
+            path="/expertconsulting/explore"
             element={<ExpertConstExplore />}
           />
         </Routes>

@@ -104,6 +104,7 @@ export const HeroData = styled.div`
     width: 100%;
     flex-direction: column;
     height: 248px;
+    padding-bottom: 40px;
   }
 `;
 
@@ -139,8 +140,11 @@ export const HeroVideoWrapper = styled.div`
   right: 2.86vw;
   /* right: 55px; */
   @media screen and (max-width: 690px) {
-    width: 264px;
-    height: 147px;
+    width: 100%;
+    height: 207px;
+    position: relative;
+    bottom: auto;
+    right: auto;
   }
 `;
 
@@ -172,11 +176,15 @@ export const ArrowRight = styled(Lottie)`
   height: auto;
   width: 7.42vw;
   /* width: 200px; */
+  @media screen and (max-width: 690px) {
+    width: 70px;
+  }
 `;
 
 export const LinkWrapper = styled(Link)`
   position: absolute;
-  right: 0px;
+  right: 0vw;
+  overflow: hidden;
   height: 98%;
   width: 8.42vw;
   /* width: 200px; */
@@ -187,4 +195,8 @@ export const LinkWrapper = styled(Link)`
   transition: 2s all ease;
   opacity: ${({ opac }) => (opac ? "0" : "1")};
   display: ${({ none }) => (none ? "none" : "flex")};
+
+  @media screen and (max-width: 690px) {
+    width: auto;
+  }
 `;

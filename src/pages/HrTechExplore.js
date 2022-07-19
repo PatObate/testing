@@ -1,12 +1,12 @@
 import React from "react";
-import ExploreSection from "../containers/ExploreSection";
+import ExploreSection3 from "../containers/ExploreSection3";
 import { CardText4 } from "../containers/ExploreSection/data";
 
 const HrTechExplore = () => {
   return (
     <>
       <div>
-        <ExploreSection {...CardText4} />
+        <ExploreSection3 {...CardText4} />
       </div>
     </>
   );
