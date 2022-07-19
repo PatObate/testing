@@ -17,6 +17,9 @@ export const SupportContainer = styled(motion.div)`
     background-repeat: no-repeat;
     padding: 10px 30px;
   }
+  @media screen and (max-width: 375px) {
+    height: 120vh;
+  }
 `;
 
 export const SupportContent = styled(motion.div)`

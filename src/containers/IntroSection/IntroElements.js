@@ -12,7 +12,7 @@ export const IntroBackground = styled.div`
   justify-content: center;
   flex-direction: column;
   @media screen and (max-width: 690px) {
-    padding: 10px 15px;
+    padding: 10px 30px;
   }
 `;
 

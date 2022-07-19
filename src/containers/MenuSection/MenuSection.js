@@ -11,6 +11,7 @@ export const MenuContainer = styled(motion.div)`
   @media screen and (max-width: 690px) {
     padding: 10px 30px;
   }
+  
 `;
 
 export const MenuWrapper = styled.div`
@@ -35,8 +36,8 @@ export const MenuHeader = styled.h1`
   line-height: 3.65vw;
   /* width: 675px; */
   @media screen and (max-width: 690px) {
-    text-align: start;
-    align-self: flex-start;
+    text-align: center;
+    align-self: center;
     width: 100%;
     font-size: 28px;
     line-height: 35px;
@@ -100,6 +101,7 @@ export const LinkWrapper2 = styled(Link)`
 
   @media screen and (max-width: 690px) {
     width: auto;
+    z-index: 2;
   }
 `;
 
