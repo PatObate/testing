@@ -100,13 +100,13 @@ const HeroSection = ({ background, intro, header, poster }) => {
   return (
     <>
       <VidContainer variants={containerVariants} exit="exit">
-        <BackgroundHeroVideo id="videoPause" muted loop>
+        <BackgroundHeroVideo id="videoPause" autoPlay muted loop playsInline>
           <HeroSource src={background} />
         </BackgroundHeroVideo>
       </VidContainer>
       <HeroContainer variants={containerVariants} exit="exit">
         <HeroVideoWrapperBig big={videoAnim} none={videoAnim2}>
-          <HeroVideo id="videoPause2" muted playsInline>
+          <HeroVideo id="videoPause2" autoPlay muted playsInline>
             <HeroSource src={intro} type="video/mp4" />
           </HeroVideo>
         </HeroVideoWrapperBig>
@@ -159,7 +159,7 @@ const HeroSection = ({ background, intro, header, poster }) => {
           exit="exit2"
           variants={containerVariants}
         >
-          <HeroVideo id="videoPause3" autoplay controls playsInline>
+          <HeroVideo id="videoPause3" autoPlay controls playsInline>
             <HeroSource src={intro} type="video/mp4" poster={poster} />
           </HeroVideo>
         </HeroVideoWrapper>
