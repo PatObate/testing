@@ -26,7 +26,7 @@ export const VidContainer = styled(motion.div)`
   @media screen and (max-width: 690px) {
     width: 100%;
     height: 100%;
-    height: 120vh;
+    display: none;
   }
 `;
 
@@ -49,6 +49,7 @@ export const HeroContainer = styled(motion.div)`
     background-repeat: no-repeat;
     padding: 10px 30px;
     height: 120vh;
+    position: relative;
   }
 `;
 

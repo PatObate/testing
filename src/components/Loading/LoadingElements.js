@@ -12,6 +12,9 @@ export const LoadingBackground = styled.div`
   top: 0;
   opacity: ${({ timer }) => (timer ? "1" : "0")};
   transition: 3s all ease;
+  @media screen and (max-width: 690px) {
+    height: 120vh;
+  }
 `;
 
 export const LoadingLogoWrapper = styled.div`
