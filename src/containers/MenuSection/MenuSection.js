@@ -21,7 +21,7 @@ export const MenuWrapper = styled.div`
   @media screen and (max-width: 690px) {
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 `;
 
@@ -36,7 +36,6 @@ export const MenuHeader = styled.h1`
   /* width: 675px; */
   @media screen and (max-width: 690px) {
     text-align: center;
-    align-self: center;
     width: 100%;
     font-size: 28px;
     line-height: 35px;
