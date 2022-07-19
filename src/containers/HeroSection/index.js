@@ -159,7 +159,7 @@ const HeroSection = ({ background, intro, header, poster }) => {
           exit="exit2"
           variants={containerVariants}
         >
-          <HeroVideo id="videoPause3" controls playsInline>
+          <HeroVideo id="videoPause3" autoplay controls playsInline>
             <HeroSource src={intro} type="video/mp4" poster={poster} />
           </HeroVideo>
         </HeroVideoWrapper>
