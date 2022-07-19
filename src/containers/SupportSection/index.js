@@ -129,7 +129,7 @@ const SupportSection = () => {
                           <LinkWrapperImg2 to="/special">
                             <SupportImgMob
                               style={{
-                                background: `  linear-gradient(89deg, #14161a 0%, #0e264cc7 100%), url(${img})`,
+                                background: `  linear-gradient(89deg,#14161aab 0%,#0e264cb5 100%), url(${img})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                                 backgroundRepeat: "no-repeat",

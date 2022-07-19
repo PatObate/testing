@@ -9,13 +9,15 @@ const Cards = [
     id: 2,
     img: require("../../images/dubai.jpg"),
     Bold: "Dubai",
-    Light: "UAE",
+    Light:
+      "Office No. 1004-1006, 10th Floor, Marina Plaza, Dubai, United Arab Emirates",
   },
   {
     id: 3,
     img: require("../../images/abudhabi.jpg"),
     Bold: "Abu Dhabi",
-    Light: "UAE",
+    Light:
+      "Office 2904, Sky Tower, Reem Island, Abu Dhabi, United Arab Emirates",
   },
 ];
 

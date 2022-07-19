@@ -37,7 +37,7 @@ const containerVariants = {
   },
 };
 
-const MenuSelectSection = ({ head, header, vid, data, link, img }) => {
+const MenuSelectSection = ({ head, header, vid, data, link, img, poster }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -76,7 +76,7 @@ const MenuSelectSection = ({ head, header, vid, data, link, img }) => {
                   <CardHeader>{header}</CardHeader>
                   <CardVideoWrapper>
                     <CardVideo controls autoPlay>
-                      <CardSource src={vid} type="audio/mpeg" />
+                      <CardSource src={vid} type="audio/mpeg" poster={poster} />
                     </CardVideo>
                   </CardVideoWrapper>
                   <CardData>{data}</CardData>

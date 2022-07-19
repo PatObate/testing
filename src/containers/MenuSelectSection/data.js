@@ -3,6 +3,7 @@ export const PeoData = {
   head: "PEO & EOR SERVICES",
   header:
     "Nathan & Nathan is a leading HR Outsourcing provider in the UAE and KSA",
+  poster: require("../../images/posters/PeoServices.png"),
   vid: require("../../videos/PEO+Services.mov"),
   data: "We help businesses onboard and payroll employees across the GCC and MENA region. With legal entities in Dubai, Abu Dhabi, Saudi Arabia, Qatar, Kuwait, Bahrain, Egypt and partners in over 45+ countries we can quickly mobilize staff identified by our customers through our global mobility platform at cost effective pricing.",
   link: "explore",
@@ -13,6 +14,7 @@ export const HrOutData = {
   head: "HR OUTSOURCING",
   header:
     "Nathan & Nathan is a leading HR Outsourcing provider in the UAE and KSA",
+  poster: require("../../images/posters/HROutsourcing.png"),
   vid: require("../../videos/intro.mp4"),
   data: "Transform your employee experience and access the latest in HR Technology and Advice. Our HR outsourcing solutions ensures that your business has access to amazing HR support all for a flat monthly fee. Our experience counts, we service over 35,000+ employees in the UAE across government and private sectors.",
   link: "explore",
@@ -20,6 +22,7 @@ export const HrOutData = {
 
 export const StaffingData = {
   img: require("../../images/staffing_service.jpeg"),
+  poster: require("../../images/posters/StaffingServices.png"),
   head: "STAFFING SERVICES",
   header:
     "Nathan & Nathan is a leading HR Outsourcing provider in the UAE and KSA",
@@ -30,6 +33,7 @@ export const StaffingData = {
 
 export const HrTechData = {
   img: require("../../images/hr_technologies_1.jpeg"),
+  poster: require("../../images/posters/HRTechnology.png"),
   head: "HR TECHNOLOGY",
   header:
     "Nathan & Nathan is a leading HR Outsourcing provider in the UAE and KSA",
@@ -40,6 +44,7 @@ export const HrTechData = {
 
 export const RemoteWorkData = {
   img: require("../../images/pixa_5.jpeg"),
+  poster: require("../../images/posters/RemoteWorkforce.png"),
   head: "REMOTE WORKFORCE",
   header:
     "Nathan & Nathan is a leading HR Outsourcing provider in the UAE and KSA",
@@ -50,6 +55,7 @@ export const RemoteWorkData = {
 
 export const ExpertConsultData = {
   img: require("../../images/remote_working.jpeg"),
+  poster: require("../../images/posters/ExpertConsulting.png"),
   head: "EXPERT CONSULTING",
   header:
     "Nathan & Nathan is a leading HR Outsourcing provider in the UAE and KSA",
