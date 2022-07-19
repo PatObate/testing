@@ -132,7 +132,7 @@ export const SupportCardContainer = styled(motion.div)`
     margin: auto;
     padding: 10px 10px;
     flex-direction: column;
-    height: 400px;
+    height: 350px;
     width: 100%;
     justify-content: space-evenly;
     border-radius: 25px;
