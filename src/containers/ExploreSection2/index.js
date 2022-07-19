@@ -127,6 +127,7 @@ const ExploreSection2 = ({
                     controls
                     autoPlay={toggleState === 1 ? true : false}
                     muted={toggleState === 1 ? false : true}
+                    playsInline
                   >
                     <CardSource src={vid1} type="video/mp4" />
                   </CardVid>
@@ -141,6 +142,7 @@ const ExploreSection2 = ({
                     controls
                     autoPlay={toggleState === 2 ? true : false}
                     muted={toggleState === 2 ? false : true}
+                    playsInline
                   >
                     <CardSource src={vid2} type="video/mp4" />
                   </CardVid>
@@ -155,6 +157,7 @@ const ExploreSection2 = ({
                     controls
                     autoPlay={toggleState === 3 ? true : false}
                     muted={toggleState === 3 ? false : true}
+                    playsInline
                   >
                     <CardSource src={vid3} type="video/mp4" />
                   </CardVid>
@@ -169,6 +172,7 @@ const ExploreSection2 = ({
                     controls
                     autoPlay={toggleState === 4 ? true : false}
                     muted={toggleState === 4 ? false : true}
+                    playsInline
                   >
                     <CardSource src={vid4} type="video/mp4" />
                   </CardVid>
@@ -183,6 +187,7 @@ const ExploreSection2 = ({
                     controls
                     autoPlay={toggleState === 5 ? true : false}
                     muted={toggleState === 5 ? false : true}
+                    playsInline
                   >
                     <CardSource src={vid5} type="video/mp4" />
                   </CardVid>
@@ -197,6 +202,7 @@ const ExploreSection2 = ({
                     controls
                     autoPlay={toggleState === 6 ? true : false}
                     muted={toggleState === 6 ? false : true}
+                    playsInline
                   >
                     <CardSource src={vid6} type="video/mp4" />
                   </CardVid>

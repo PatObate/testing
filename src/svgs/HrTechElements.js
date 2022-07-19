@@ -12,6 +12,9 @@ export const NavWrapper = styled(NavLink)`
     fill: #2648ff;
     transition: 0.5s all ease-in-out;
   }
+  @media screen and (max-width: 690px) {
+    fill: #2648ff;
+  }
 `;
 
 export const Path1 = styled.path`

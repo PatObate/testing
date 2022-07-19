@@ -265,6 +265,9 @@ export const LinkWrapper = styled(Link)`
   opacity: ${({ opac }) => (opac ? "0" : "1")};
   display: ${({ none }) => (none ? "none" : "flex")};
   transition: 2s all ease;
+  @media screen and (max-width: 690px) {
+    width: auto;
+  }
 `;
 
 export const LinkWrapper2 = styled(Link)`
@@ -278,17 +281,28 @@ export const LinkWrapper2 = styled(Link)`
   display: flex;
   top: 0;
   transition: 2s all ease;
+  @media screen and (max-width: 690px) {
+    width: auto;
+  }
 `;
 
 export const ArrowRight = styled(Lottie)`
   z-index: 1;
   /* width: 200px; */
+  width: 7.42vw;
+  @media screen and (max-width: 690px) {
+    width: 70px;
+  }
 `;
 
 export const ArrowLeft = styled(Lottie)`
   z-index: 1;
+  width: 7.42vw;
   transform: rotate(180deg);
   /* width: 200px; */
+  @media screen and (max-width: 690px) {
+    width: 70px;
+  }
 `;
 
 export const ArrowDiv = styled(motion.div)``;

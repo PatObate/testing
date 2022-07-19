@@ -62,8 +62,11 @@ export const MenuContent = styled(motion.div)`
 export const ArrowRight = styled(Lottie)`
   z-index: 1;
   height: auto;
-  width: 8.42vw;
+  width: 7.42vw;
   /* width: 200px; */
+  @media screen and (max-width: 690px) {
+    width: 70px;
+  }
 `;
 
 export const Volume = styled(Lottie)`
@@ -94,6 +97,10 @@ export const LinkWrapper2 = styled(Link)`
   top: 0;
   transition: 2s all ease;
   transform: rotate(180deg);
+
+  @media screen and (max-width: 690px) {
+    width: auto;
+  }
 `;
 
 export const ArrowDiv = styled(motion.div)``;

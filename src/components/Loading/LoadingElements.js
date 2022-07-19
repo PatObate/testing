@@ -25,7 +25,7 @@ export const LoadingLogoWrapper = styled.div`
 `;
 
 export const LoadingLogo = styled.img`
-  width: 20%;
+  width: 15%;
   height: auto;
   margin: auto;
   display: block;

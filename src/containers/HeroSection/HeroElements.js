@@ -54,6 +54,8 @@ export const HeroLogo = styled.img`
   max-width: 100%;
   height: auto;
   padding-bottom: 1.82vw;
+  display: block;
+  margin: auto;
   /* padding-bottom: 35px; */
 `;
 

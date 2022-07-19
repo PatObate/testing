@@ -172,6 +172,10 @@ export const LinkWrapper = styled(Link)`
   display: flex;
   top: 0;
   transition: 2s all ease;
+
+  @media screen and (max-width: 690px) {
+    width: auto;
+  }
 `;
 
 export const ArrowRight = styled(Lottie)`
@@ -179,6 +183,9 @@ export const ArrowRight = styled(Lottie)`
   height: auto;
   width: 7.42vw;
   /* width: 200px; */
+  @media screen and (max-width: 690px) {
+    width: 70px;
+  }
 `;
 
 export const LinkWrapper2 = styled(Link)`
@@ -193,6 +200,10 @@ export const LinkWrapper2 = styled(Link)`
   top: 0;
   transition: 2s all ease;
   transform: rotate(180deg);
+
+  @media screen and (max-width: 690px) {
+    width: auto;
+  }
 `;
 
 export const ArrowDiv = styled(motion.div)``;

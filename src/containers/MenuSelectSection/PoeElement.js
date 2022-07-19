@@ -17,9 +17,7 @@ export const PoeWrapper = styled.div`
   height: 100%;
 `;
 
-export const PoeRow = styled.div`
-
-`;
+export const PoeRow = styled.div``;
 
 export const PoeHeader = styled.h1`
   font-family: "Poppins", sans-serif;
@@ -51,8 +49,11 @@ export const PoeContentNone = styled(motion.div)``;
 export const ArrowRight = styled(Lottie)`
   z-index: 1;
   height: auto;
-  width: 8.42vw;
+  width: 7.42vw;
   /* width: 200px; */
+  @media screen and (max-width: 690px) {
+    width: 70px;
+  }
 `;
 
 export const LinkWrapper2 = styled(Link)`
@@ -67,6 +68,11 @@ export const LinkWrapper2 = styled(Link)`
   top: 0;
   transition: 2s all ease;
   transform: rotate(180deg);
+
+  
+  @media screen and (max-width: 690px) {
+    width: auto;
+  }
 `;
 
 export const CardContainer = styled.div`
