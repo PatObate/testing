@@ -36,6 +36,7 @@ export const MenuHeader = styled.h1`
   /* width: 675px; */
   @media screen and (max-width: 690px) {
     text-align: center;
+    align-self: center;
     width: 100%;
     font-size: 28px;
     line-height: 35px;
