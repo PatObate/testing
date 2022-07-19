@@ -107,7 +107,7 @@ const HeroSection = ({ background, intro, header }) => {
       <HeroContainer variants={containerVariants} exit="exit">
         <HeroVideoWrapperBig big={videoAnim} none={videoAnim2}>
           <HeroVideo id="videoPause2" muted playsInline>
-            <HeroSource src={intro} type="audio/mpeg" />
+            <HeroSource src={intro} type="video/mp4" />
           </HeroVideo>
         </HeroVideoWrapperBig>
 
@@ -160,7 +160,7 @@ const HeroSection = ({ background, intro, header }) => {
           variants={containerVariants}
         >
           <HeroVideo id="videoPause3" controls playsInline>
-            <HeroSource src={intro} type="audio/mpeg" />
+            <HeroSource src={intro} type="video/mp4" />
           </HeroVideo>
         </HeroVideoWrapper>
         <ArrowDiv exit="exit2" variants={containerVariants}>
