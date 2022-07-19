@@ -26,6 +26,7 @@ export const VidContainer = styled(motion.div)`
   @media screen and (max-width: 690px) {
     width: 100%;
     height: 100%;
+    height: 120vh;
   }
 `;
 
@@ -166,13 +167,9 @@ export const HeroVideo = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-
 `;
 
-export const HeroSource = styled.source`
-
-`;
+export const HeroSource = styled.source``;
 
 export const ArrowDiv = styled(motion.div)``;
 

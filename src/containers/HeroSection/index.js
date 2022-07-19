@@ -85,7 +85,6 @@ const HeroSection = ({ background, intro, header, poster }) => {
 
   useEffect(() => {
     if (window.matchMedia("(max-width: 690px)").matches) {
-    
     } else {
       setVideoAnim(true);
       setTimeout(() => {
@@ -160,8 +159,14 @@ const HeroSection = ({ background, intro, header, poster }) => {
           exit="exit2"
           variants={containerVariants}
         >
-          <HeroVideo id="videoPause3" autoPlay controls playsInline>
-            <HeroSource src={intro} type="video/mp4" poster={poster} />
+          <HeroVideo
+            id="videoPause3"
+            autoPlay
+            controls
+            playsInline
+            poster={poster}
+          >
+            <HeroSource src={intro} type="video/mp4" />
           </HeroVideo>
         </HeroVideoWrapper>
         <ArrowDiv exit="exit2" variants={containerVariants}>
