@@ -21,7 +21,7 @@ import Num from "./num";
 import arrow from "../../lotties/arrow.json";
 import logo from "../../svgs/Logo.svg";
 
-const HeroSection = ({ background, intro, header }) => {
+const HeroSection = ({ background, intro, header, poster }) => {
   const [data] = useState(Num);
   const [videoAnim, setVideoAnim] = useState(true);
   const [videoAnim2, setVideoAnim2] = useState(true);
@@ -160,7 +160,7 @@ const HeroSection = ({ background, intro, header }) => {
           variants={containerVariants}
         >
           <HeroVideo id="videoPause3" controls playsInline>
-            <HeroSource src={intro} type="video/mp4" />
+            <HeroSource src={intro} type="video/mp4" poster={poster} />
           </HeroVideo>
         </HeroVideoWrapper>
         <ArrowDiv exit="exit2" variants={containerVariants}>
