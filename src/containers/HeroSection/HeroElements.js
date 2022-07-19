@@ -47,7 +47,6 @@ export const HeroContainer = styled(motion.div)`
     background-position: center;
     background-repeat: no-repeat;
     padding: 10px 30px;
-    height: 120vh;
   }
 `;
 
@@ -124,8 +123,7 @@ export const HeroVideoWrapperBig = styled.div`
   min-width: 100%;
   min-height: 100%;
   @media screen and (max-width: 690px) {
-    width: 100%;
-    height: 100%;
+    display: none;
   }
 `;
 export const HeroVideoWrapper = styled.div`
@@ -168,9 +166,13 @@ export const HeroVideo = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+
 `;
 
-export const HeroSource = styled.source``;
+export const HeroSource = styled.source`
+
+`;
 
 export const ArrowDiv = styled(motion.div)``;
 

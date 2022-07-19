@@ -29,20 +29,6 @@ const HeroSection = ({ background, intro, header, poster }) => {
   const [arrowAnim2, SetArrowAnim2] = useState(true);
 
   useEffect(() => {
-    setVideoAnim(true);
-    setTimeout(() => {
-      setVideoAnim(false);
-    }, 9000);
-  }, []);
-
-  useEffect(() => {
-    setVideoAnim2(true);
-    setTimeout(() => {
-      setVideoAnim2(false);
-    }, 11000);
-  }, []);
-
-  useEffect(() => {
     SetArrowAnim(true);
     setTimeout(() => {
       SetArrowAnim(false);
@@ -96,6 +82,21 @@ const HeroSection = ({ background, intro, header, poster }) => {
       transition: { duration: 0.5 },
     },
   };
+
+  useEffect(() => {
+    if (window.matchMedia("(max-width: 690px)").matches) {
+    
+    } else {
+      setVideoAnim(true);
+      setTimeout(() => {
+        setVideoAnim(false);
+      }, 9000);
+      setVideoAnim2(true);
+      setTimeout(() => {
+        setVideoAnim2(false);
+      }, 11000);
+    }
+  }, []);
 
   return (
     <>
