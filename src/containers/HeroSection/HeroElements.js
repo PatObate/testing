@@ -48,7 +48,6 @@ export const HeroContainer = styled(motion.div)`
     background-position: center;
     background-repeat: no-repeat;
     padding: 10px 30px;
-    height: 120vh;
     position: relative;
   }
 `;
@@ -202,6 +201,6 @@ export const LinkWrapper = styled(Link)`
 
   @media screen and (max-width: 690px) {
     width: auto;
-    height: 120vh;
+    height: 100vh;
   }
 `;
