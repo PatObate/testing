@@ -9,10 +9,9 @@ export const PoeContainer = styled(motion.div)`
   padding: 2.6vw 12.29vw 2.6vw 7.29vw;
   @media screen and (max-width: 690px) {
     padding: 10px 30px;
-  }
-  @media screen and (max-width: 375px) {
     height: 120vh;
   }
+
 `;
 
 export const PoeWrapper = styled.div`

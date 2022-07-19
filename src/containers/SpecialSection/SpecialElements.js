@@ -17,6 +17,7 @@ export const SpecialContainer = styled(motion.div)`
   flex-direction: column;
   @media screen and (max-width: 690px) {
     padding: 10px 30px;
+    height: 120vh;
   }
 `;
 
