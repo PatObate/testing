@@ -75,8 +75,8 @@ const MenuSelectSection = ({ head, header, vid, data, link, img, poster }) => {
                 <CardWrapper>
                   <CardHeader>{header}</CardHeader>
                   <CardVideoWrapper>
-                    <CardVideo controls autoPlay playsInline>
-                      <CardSource src={vid} type="video/mp4" poster={poster} />
+                    <CardVideo controls autoPlay playsInline poster={poster}>
+                      <CardSource src={vid} type="video/mp4" />
                     </CardVideo>
                   </CardVideoWrapper>
                   <CardData>{data}</CardData>
