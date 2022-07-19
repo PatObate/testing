@@ -20,6 +20,16 @@ const Home = () => {
       setPreloader2(false);
     }, 9000);
   }, []);
+
+  // useEffect(() => {
+  //   if (window.matchMedia("(max-width: 690px)").matches) {
+      
+  //   } else {
+
+  //   }
+  // }, []);
+
+
   return (
     <>
       <div>
