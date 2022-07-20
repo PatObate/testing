@@ -125,15 +125,15 @@ const HeroSection = ({ background, intro, header }) => {
   return (
     <>
       <VidContainer variants={containerVariants} exit="exit">
-        <BackgroundHeroVideo id="videoPause" muted loop>
-          <HeroSource src={background} />
+        <BackgroundHeroVideo id="videoPause" muted loop playsInline>
+          <HeroSource src={background} type="video/mp4" />
         </BackgroundHeroVideo>
       </VidContainer>
       <HeroContainer variants={containerVariants} exit="exit">
         <HeroWrappper>
           <HeroVideoWrapperBig big={videoAnim} none={videoAnim2}>
-            <HeroVideo id="videoPause2" muted>
-              <HeroSource src={intro} type="audio/mpeg" />
+            <HeroVideo id="videoPause2" muted playsInline>
+              <HeroSource src={intro} type="video/mp4" />
             </HeroVideo>
           </HeroVideoWrapperBig>
 
@@ -223,8 +223,8 @@ const HeroSection = ({ background, intro, header }) => {
             exit="exit2"
             variants={containerVariants}
           >
-            <HeroVideo id="videoPause3" controls>
-              <HeroSource src={intro} type="audio/mpeg" />
+            <HeroVideo id="videoPause3" controls playsInline poster={poster}>
+              <HeroSource src={intro} type="video/mp4" />
             </HeroVideo>
           </HeroVideoWrapper>
           <HeroVideoWrapperMob
@@ -234,8 +234,8 @@ const HeroSection = ({ background, intro, header }) => {
             exit="exit2"
             variants={containerVariants}
           >
-            <HeroVideo id="videoPauseMob" controls>
-              <HeroSource src={intro} type="audio/mpeg" />
+            <HeroVideo id="videoPauseMob" controls playsInline poster={poster}>
+              <HeroSource src={intro} type="video/mp4" />
             </HeroVideo>
           </HeroVideoWrapperMob>
         </HeroWrappper>
