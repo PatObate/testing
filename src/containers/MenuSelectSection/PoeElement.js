@@ -73,6 +73,9 @@ export const LinkWrapper2 = styled(Link)`
   transition: 2s all ease;
   transform: rotate(180deg);
   z-index: 2;
+  @media screen and (max-width: 690px) {
+    height: 15vh;
+  }
 `;
 
 export const CardContainer = styled.div`

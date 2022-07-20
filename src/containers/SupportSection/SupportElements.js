@@ -98,7 +98,7 @@ export const SupportSub = styled.p`
   text-align: start;
   padding-bottom: 1.04vw;
   @media screen and (max-width: 690px) {
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     font-weight: 300;
     width: 100%;
@@ -116,10 +116,11 @@ export const SupportImgMob = styled.div`
   transition: 0.5s all ease-in-out;
   border-radius: 25px;
   flex-direction: column;
+  padding: 0px 20px;
 `;
 
 export const SupportCardContainer = styled(motion.div)`
-  height: 18.01vw;
+  height: 20.01vw;
   /* height: 365px; */
   width: 46.12vw;
   /* width: 885.5px; */
@@ -129,8 +130,8 @@ export const SupportCardContainer = styled(motion.div)`
   background: #12233345;
   border-radius: 1.56vw;
   /* border-radius: 30px; */
-  margin-bottom: 6.25vw;
-  padding: 0px 6vw;
+  margin-bottom: 4.25vw;
+  padding: 0px 3vw;
   @media screen and (max-width: 690px) {
     margin: auto;
     padding: 10px 10px;
@@ -160,6 +161,7 @@ export const SupportImg = styled.img`
   @media screen and (max-width: 690px) {
     height: 100px;
     width: 200px;
+    padding: 0px 10px;
     border-radius: 25px;
   }
 `;
@@ -200,7 +202,7 @@ export const SupportTag = styled.p`
 
 export const SupportLight = styled.p`
   font-family: "Poppins", sans-serif;
-  font-size: 1.25vw;
+  font-size: 0.8vw;
   /* font-size: 24px; */
   color: #ffffff;
   font-weight: 100;
@@ -233,6 +235,7 @@ export const SupportTiny = styled.p`
   padding-bottom: 1vw;
   @media screen and (max-width: 690px) {
     text-align: center;
+    font-weight: 600;
     font-size: 12px;
     width: auto;
   }
@@ -253,6 +256,11 @@ export const SupportImgWrapper = styled.div`
 `;
 export const LinkWrapperImg = styled(Link)`
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 9vw;
   @media screen and (max-width: 690px) {
     display: none;
   }

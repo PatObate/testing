@@ -201,7 +201,7 @@ export const CardSource = styled.source``;
 
 export const CardContainer2 = styled.div`
   height: 35.99vw;
-  width: 32.42vw;
+  width: 35.42vw;
   background: #171b236e;
   border-radius: 0vw 1.28vw 1.28vw 0vw;
   padding: ${({ triplewidth }) =>

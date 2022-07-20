@@ -9,7 +9,7 @@ export const MenuContainer = styled(motion.div)`
   background: #182436;
   padding: 5.6vw 12.29vw 5.6vw 7.29vw;
   @media screen and (max-width: 690px) {
-    padding: 50px 30px;
+    padding: 85px 30px;
     overflow: hidden;
   }
 `;
@@ -52,6 +52,7 @@ export const MenuDiv = styled.div`
 
   @media screen and (max-width: 690px) {
     display: block;
+    height: 10%;
   }
 `;
 
@@ -98,6 +99,10 @@ export const LinkWrapper2 = styled(Link)`
   transition: 2s all ease;
   transform: rotate(180deg);
   z-index: 2;
+  @media screen and (max-width: 690px) {
+    top: 85vh;
+    height: 15vh;
+  }
 `;
 
 export const ArrowDiv = styled(motion.div)``;
