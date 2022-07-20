@@ -26,7 +26,7 @@ import Num from "./num";
 import arrow from "../../lotties/arrow.json";
 import logo from "../../svgs/Logo.svg";
 
-const HeroSection = ({ background, intro, header }) => {
+const HeroSection = ({ background, intro, header, poster }) => {
   const [data] = useState(Num);
   const [videoAnim, setVideoAnim] = useState(true);
   const [videoAnim2, setVideoAnim2] = useState(true);
