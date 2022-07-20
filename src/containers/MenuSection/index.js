@@ -5,7 +5,6 @@ import {
   LinkWrapper2,
   MenuContainer,
   MenuContent,
-  MenuDiv,
   MenuHeader,
   MenuSpan,
   MenuWrapper,

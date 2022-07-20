@@ -6,14 +6,19 @@ import {
   BackgroundHeroVideo,
   HeroContainer,
   HeroData,
+  HeroDataMob,
   HeroHeader,
+  HeroHeaderMob,
   HeroLogo,
+  HeroLogoMob,
   HeroNumber,
   HeroSource,
   HeroTag,
   HeroVideo,
   HeroVideoWrapper,
   HeroVideoWrapperBig,
+  HeroVideoWrapperMob,
+  HeroWrappper,
   LinkWrapper,
   VidContainer,
 } from "./HeroElements";
@@ -21,26 +26,62 @@ import Num from "./num";
 import arrow from "../../lotties/arrow.json";
 import logo from "../../svgs/Logo.svg";
 
-const HeroSection = ({ background, intro, header, poster }) => {
+const HeroSection = ({ background, intro, header }) => {
   const [data] = useState(Num);
   const [videoAnim, setVideoAnim] = useState(true);
   const [videoAnim2, setVideoAnim2] = useState(true);
   const [arrowAnim, SetArrowAnim] = useState(true);
   const [arrowAnim2, SetArrowAnim2] = useState(true);
 
-  useEffect(() => {
+  const VidLoader = () => {
+    setVideoAnim(true);
+    setTimeout(() => {
+      setVideoAnim(false);
+    }, 9000);
+
+    setVideoAnim2(true);
+    setTimeout(() => {
+      setVideoAnim2(false);
+    }, 11000);
+
+    setTimeout(function () {
+      document.getElementById("videoPause2").play();
+    }, 6000);
+
+    setTimeout(function () {
+      document.getElementById("videoPause3").play();
+    }, 6000);
+
     SetArrowAnim(true);
     setTimeout(() => {
       SetArrowAnim(false);
     }, 15000);
-  }, []);
 
-  useEffect(() => {
     SetArrowAnim2(true);
     setTimeout(() => {
       SetArrowAnim2(false);
     }, 16000);
-  }, []);
+  };
+
+  const VidLoaderMob = () => {
+    setTimeout(function () {
+      document.getElementById("videoPauseMob").play();
+    }, 10500);
+
+    SetArrowAnim(true);
+    setTimeout(() => {
+      SetArrowAnim(false);
+    }, 12000);
+
+    SetArrowAnim2(true);
+    setTimeout(() => {
+      SetArrowAnim2(false);
+    }, 13000);
+  };
+
+  useEffect(() => {}, []);
+
+  useEffect(() => {}, []);
 
   useEffect(() => {
     setVideoAnim(true);
@@ -61,16 +102,6 @@ const HeroSection = ({ background, intro, header, poster }) => {
       document.getElementById("videoPause").play();
     }, 6000);
   }, []);
-  useEffect(() => {
-    setTimeout(function () {
-      document.getElementById("videoPause2").play();
-    }, 6000);
-  }, []);
-  useEffect(() => {
-    setTimeout(function () {
-      document.getElementById("videoPause3").play();
-    }, 6000);
-  }, []);
 
   const containerVariants = {
     exit: {
@@ -85,90 +116,129 @@ const HeroSection = ({ background, intro, header, poster }) => {
 
   useEffect(() => {
     if (window.matchMedia("(max-width: 690px)").matches) {
+      VidLoaderMob();
     } else {
-      setVideoAnim(true);
-      setTimeout(() => {
-        setVideoAnim(false);
-      }, 9000);
-      setVideoAnim2(true);
-      setTimeout(() => {
-        setVideoAnim2(false);
-      }, 11000);
+      VidLoader();
     }
   }, []);
 
   return (
     <>
       <VidContainer variants={containerVariants} exit="exit">
-        <BackgroundHeroVideo id="videoPause" autoPlay muted loop playsInline>
+        <BackgroundHeroVideo id="videoPause" muted loop>
           <HeroSource src={background} />
         </BackgroundHeroVideo>
       </VidContainer>
       <HeroContainer variants={containerVariants} exit="exit">
-        <HeroVideoWrapperBig big={videoAnim} none={videoAnim2}>
-          <HeroVideo id="videoPause2" autoPlay muted playsInline>
-            <HeroSource src={intro} type="video/mp4" />
-          </HeroVideo>
-        </HeroVideoWrapperBig>
+        <HeroWrappper>
+          <HeroVideoWrapperBig big={videoAnim} none={videoAnim2}>
+            <HeroVideo id="videoPause2" muted>
+              <HeroSource src={intro} type="audio/mpeg" />
+            </HeroVideo>
+          </HeroVideoWrapperBig>
 
-        <div>
-          {" "}
-          <HeroLogo
-            src={logo}
-            as={motion.img}
+          <div>
+            {" "}
+            <HeroLogo
+              src={logo}
+              as={motion.img}
+              animate={{ opacity: [0, 1] }}
+              transition={{ duration: 2, delay: 11.7 }}
+              exit="exit2"
+              variants={containerVariants}
+              alt="Logo"
+            />
+            <HeroLogoMob
+              src={logo}
+              as={motion.img}
+              animate={{ opacity: [0, 1] }}
+              transition={{ duration: 2, delay: 7.5 }}
+              exit="exit2"
+              variants={containerVariants}
+              alt="Logo"
+            />
+            <HeroHeader
+              as={motion.h1}
+              animate={{ opacity: [0, 1] }}
+              transition={{ duration: 2, delay: 12.7 }}
+              exit="exit2"
+              variants={containerVariants}
+            >
+              {header}
+            </HeroHeader>
+            <HeroHeaderMob
+              as={motion.h1}
+              animate={{ opacity: [0, 1] }}
+              transition={{ duration: 2, delay: 8.5 }}
+              exit="exit2"
+              variants={containerVariants}
+            >
+              {header}
+            </HeroHeaderMob>
+          </div>
+
+          <HeroData>
+            {data.map((values) => {
+              const { id, number, tag } = values;
+              return (
+                <>
+                  <motion.div
+                    animate={{ opacity: [0, 1] }}
+                    transition={{ duration: 2, delay: 13.7 }}
+                    key={id}
+                    exit="exit2"
+                    variants={containerVariants}
+                  >
+                    <HeroNumber>{number}</HeroNumber>
+                    <HeroTag>{tag}</HeroTag>
+                  </motion.div>
+                </>
+              );
+            })}
+          </HeroData>
+
+          <HeroDataMob>
+            {data.map((values) => {
+              const { id, number, tag } = values;
+              return (
+                <>
+                  <motion.div
+                    animate={{ opacity: [0, 1] }}
+                    transition={{ duration: 2, delay: 9.5 }}
+                    key={id}
+                    exit="exit2"
+                    variants={containerVariants}
+                  >
+                    <HeroNumber>{number}</HeroNumber>
+                    <HeroTag>{tag}</HeroTag>
+                  </motion.div>
+                </>
+              );
+            })}
+          </HeroDataMob>
+          <HeroVideoWrapper
+            as={motion.div}
             animate={{ opacity: [0, 1] }}
-            transition={{ duration: 2, delay: 11.7 }}
-            exit="exit2"
-            variants={containerVariants}
-            alt="Logo"
-          />
-          <HeroHeader
-            as={motion.h1}
-            animate={{ opacity: [0, 1] }}
-            transition={{ duration: 2, delay: 12.7 }}
+            transition={{ duration: 2, delay: 10 }}
             exit="exit2"
             variants={containerVariants}
           >
-            {header}
-          </HeroHeader>
-        </div>
-
-        <HeroData>
-          {data.map((values) => {
-            const { id, number, tag } = values;
-            return (
-              <>
-                <motion.div
-                  animate={{ opacity: [0, 1] }}
-                  transition={{ duration: 2, delay: 13.7 }}
-                  key={id}
-                  exit="exit2"
-                  variants={containerVariants}
-                >
-                  <HeroNumber>{number}</HeroNumber>
-                  <HeroTag>{tag}</HeroTag>
-                </motion.div>
-              </>
-            );
-          })}
-        </HeroData>
-        <HeroVideoWrapper
-          as={motion.div}
-          animate={{ opacity: [0, 1] }}
-          transition={{ duration: 2, delay: 10 }}
-          exit="exit2"
-          variants={containerVariants}
-        >
-          <HeroVideo
-            id="videoPause3"
-            autoPlay
-            controls
-            playsInline
-            poster={poster}
+            <HeroVideo id="videoPause3" controls>
+              <HeroSource src={intro} type="audio/mpeg" />
+            </HeroVideo>
+          </HeroVideoWrapper>
+          <HeroVideoWrapperMob
+            as={motion.div}
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 2, delay: 10.5 }}
+            exit="exit2"
+            variants={containerVariants}
           >
-            <HeroSource src={intro} type="video/mp4" />
-          </HeroVideo>
-        </HeroVideoWrapper>
+            <HeroVideo id="videoPauseMob" controls>
+              <HeroSource src={intro} type="audio/mpeg" />
+            </HeroVideo>
+          </HeroVideoWrapperMob>
+        </HeroWrappper>
         <ArrowDiv exit="exit2" variants={containerVariants}>
           <LinkWrapper to="/support" none={arrowAnim} opac={arrowAnim2}>
             <ArrowRight animationData={arrow} />

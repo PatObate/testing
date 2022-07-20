@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LoadingBackground = styled.div`
   width: 100%;
   height: 100vh;
-  background: linear-gradient(89deg, #14161a 0%, #0e264cc7 100%);
+  background: linear-gradient(89deg, #14161a 0%, #0e264c 100%);
   position: fixed;
   align-items: center;
   justify-content: center;
