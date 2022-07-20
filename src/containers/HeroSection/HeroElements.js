@@ -39,7 +39,7 @@ export const HeroContainer = styled(motion.div)`
   background: transparent;
   z-index: 2;
   @media screen and (max-width: 690px) {
-    background: linear-gradient(180deg, #14161a6b 0%, #0e264ccc 100%),
+    background: linear-gradient(180deg, #646464a1 0%, #0e264cd6 100%),
       url(${img});
     background-size: cover;
     background-position: center;
@@ -108,7 +108,7 @@ export const HeroHeaderMob = styled.h1`
     font-size: 3.39vw;
     /* font-size: 65px; */
     color: #ffffff70;
-    font-weight: 100;
+    font-weight: 300;
     padding-bottom: 4.58vw;
     /* padding-bottom: 88px; */
     text-align: center;
@@ -124,6 +124,8 @@ export const HeroNumber = styled.p`
   text-align: center;
   @media screen and (max-width: 690px) {
     font-size: 30px;
+    font-weight: 600;
+    color: #2940bf;
   }
 `;
 

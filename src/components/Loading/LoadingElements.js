@@ -12,6 +12,9 @@ export const LoadingBackground = styled.div`
   top: 0;
   opacity: ${({ timer }) => (timer ? "1" : "0")};
   transition: 3s all ease;
+  @media screen and (max-width: 690px) {
+    background: linear-gradient(358deg, #14161a 0%, #0e264c 100%);
+  }
 `;
 
 export const LoadingLogoWrapper = styled.div`
