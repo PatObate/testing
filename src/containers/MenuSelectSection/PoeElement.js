@@ -8,7 +8,7 @@ export const PoeContainer = styled(motion.div)`
   height: 100vh;
   padding: 5.6vw 7.29vw;
   @media screen and (max-width: 690px) {
-    padding: 10px 30px;
+    padding: 50px 30px;
     height: 100vh;
   }
 `;
@@ -29,8 +29,10 @@ export const PoeHeader = styled.h1`
   /* width: 675px; */
   padding-bottom: 2.19vw;
   @media screen and (max-width: 690px) {
-    font-size: 17px;
+    font-size: 20px;
     width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
   }
 `;
 
@@ -42,6 +44,7 @@ export const PoeContent = styled(motion.div)`
   height: 100%;
   @media screen and (max-width: 690px) {
     justify-content: center;
+    align-items: flex-start;
   }
 `;
 
@@ -134,6 +137,7 @@ export const CardData = styled.p`
   padding-bottom: 0.83vw;
   @media screen and (max-width: 690px) {
     font-size: 13px;
+    line-height: 1.5;
     padding-bottom: 10px;
   }
 `;
@@ -167,7 +171,10 @@ export const CardButton = styled(Link)`
     height: 30px;
     border-radius: 30px;
     padding: 0px 10px;
-
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    justify-content: center;
     :hover {
       transition: 0.5s all ease-in-out;
       width: 120px;
@@ -183,6 +190,6 @@ export const ButtonText = styled.div`
   font-weight: 100;
   text-align: left;
   @media screen and (max-width: 690px) {
-    font-size: 10px;
+    font-size: 14px;
   }
 `;

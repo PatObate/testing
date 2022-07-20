@@ -15,7 +15,7 @@ export const SupportContainer = styled(motion.div)`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 10px 30px;
+    padding: 50px 30px;
     height: 100%;
   }
 `;
@@ -100,6 +100,7 @@ export const SupportSub = styled.p`
   @media screen and (max-width: 690px) {
     font-size: 13px;
     text-align: center;
+    font-weight: 300;
     width: 100%;
     margin: auto;
   }
@@ -169,7 +170,7 @@ export const SupportImg2 = styled.img`
   /* padding-bottom: 25px; */
   @media screen and (max-width: 690px) {
     width: 33%;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
   }
 `;
 export const SupportImg3 = styled.img`
@@ -178,6 +179,8 @@ export const SupportImg3 = styled.img`
   /* padding-bottom: 25px; */
   @media screen and (max-width: 690px) {
     width: 62%;
+    border-top: 1px solid #834924;
+    padding-top: 10px;
   }
 `;
 
@@ -191,6 +194,7 @@ export const SupportTag = styled.p`
   line-height: 1;
   @media screen and (max-width: 690px) {
     font-size: 15px;
+    padding-bottom: 10px;
   }
 `;
 
@@ -203,6 +207,7 @@ export const SupportLight = styled.p`
   text-align: center;
   @media screen and (max-width: 690px) {
     font-size: 12px;
+    line-height: 1.5;
     font-weight: 300;
   }
 `;

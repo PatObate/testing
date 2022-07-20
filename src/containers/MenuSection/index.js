@@ -5,6 +5,7 @@ import {
   LinkWrapper2,
   MenuContainer,
   MenuContent,
+  MenuDiv,
   MenuHeader,
   MenuSpan,
   MenuWrapper,
@@ -90,6 +91,7 @@ const MenuSection = () => {
                 <MenuSpan> TECHNOLOGY</MenuSpan> TO POWER YOUR BUSINESS
               </MenuHeader>
               <Navigation />
+              <MenuDiv />
             </MenuWrapper>
           </MenuContent>
         </MenuContent>

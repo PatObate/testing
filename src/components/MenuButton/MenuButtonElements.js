@@ -13,6 +13,7 @@ export const ButtonWrapper = styled.div`
     background: #111830;
     position: fixed;
     bottom: 30px;
+    right: 30px;
     opacity: ${({ toggle }) => (toggle ? "0" : "1")};
     transition: 0.3s all ease-in-out;
   }

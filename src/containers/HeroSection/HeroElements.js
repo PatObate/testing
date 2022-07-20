@@ -45,7 +45,7 @@ export const HeroContainer = styled(motion.div)`
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    padding: 10px 30px;
+    padding: 50px 30px;
   }
 `;
 
@@ -57,7 +57,7 @@ export const HeroWrappper = styled.div`
   width: 100%;
   height: 100%;
   @media screen and (max-width: 690px) {
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
   }
 `;
@@ -105,7 +105,7 @@ export const HeroHeaderMob = styled.h1`
   @media screen and (max-width: 690px) {
     display: block;
     font-family: "Poppins", sans-serif;
-    font-size: 3.39vw;
+    font-size: 15px;
     /* font-size: 65px; */
     color: #ffffff70;
     font-weight: 300;

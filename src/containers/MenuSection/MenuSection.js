@@ -9,7 +9,7 @@ export const MenuContainer = styled(motion.div)`
   background: #182436;
   padding: 5.6vw 12.29vw 5.6vw 7.29vw;
   @media screen and (max-width: 690px) {
-    padding: 10px 30px;
+    padding: 50px 30px;
     overflow: hidden;
   }
 `;
@@ -22,7 +22,6 @@ export const MenuWrapper = styled.div`
   @media screen and (max-width: 690px) {
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
   }
 `;
 
