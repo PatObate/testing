@@ -16,6 +16,7 @@ export const SupportContainer = styled(motion.div)`
     background-position: center;
     background-repeat: no-repeat;
     padding: 10px 30px;
+    height: 100%;
   }
 `;
 
@@ -53,7 +54,8 @@ export const SupportHeader = styled(motion.h1)`
   @media screen and (max-width: 690px) {
     font-size: 28px;
     text-align: start;
-    width: 100%;
+    width: 90%;
+    padding-bottom: 30px;
   }
 `;
 
@@ -97,15 +99,15 @@ export const SupportSub = styled.p`
   padding-bottom: 1.04vw;
   @media screen and (max-width: 690px) {
     font-size: 13px;
-    text-align: start;
+    text-align: center;
     width: 100%;
     margin: auto;
   }
 `;
 
 export const SupportImgMob = styled.div`
-  height: 100px;
-  width: 200px;
+  height: 130px;
+  width: 100%;
   border-radius: 25px;
   display: flex;
   align-items: center;
@@ -132,10 +134,12 @@ export const SupportCardContainer = styled(motion.div)`
     margin: auto;
     padding: 10px 10px;
     flex-direction: column;
-    height: 350px;
+    height: 500px;
     width: 100%;
+    padding: 0px 30px;
     justify-content: space-evenly;
     border-radius: 25px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -186,7 +190,7 @@ export const SupportTag = styled.p`
   text-align: center;
   line-height: 1;
   @media screen and (max-width: 690px) {
-    font-size: 13px;
+    font-size: 15px;
   }
 `;
 
@@ -198,7 +202,8 @@ export const SupportLight = styled.p`
   font-weight: 100;
   text-align: center;
   @media screen and (max-width: 690px) {
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 300;
   }
 `;
 
@@ -237,6 +242,7 @@ export const SupportImgWrapper = styled.div`
   @media screen and (max-width: 690px) {
     margin: auto;
     justify-content: center;
+    flex-direction: column;
     width: auto;
   }
 `;
@@ -251,41 +257,36 @@ export const LinkWrapperImg2 = styled(Link)`
   @media screen and (max-width: 690px) {
     display: block;
     text-decoration: none;
+    width: 100%;
   }
 `;
 
 export const LinkWrapper = styled(Link)`
-  position: absolute;
+  position: fixed;
   right: 0vw;
-  top: 0vw;
-  height: 98%;
-  width: 7.42vw;
-  /* width: 200px; */
-  cursor: pointer;
-  opacity: ${({ opac }) => (opac ? "0" : "1")};
-  display: ${({ none }) => (none ? "none" : "flex")};
-  transition: 2s all ease;
-  @media screen and (max-width: 690px) {
-    width: auto;
-    height: 100vh;
-  }
-`;
-
-export const LinkWrapper2 = styled(Link)`
-  position: absolute;
-  left: 0vw;
-  height: 98%;
-  width: 7.42vw;
+  height: 100vh;
+  width: auto;
   /* width: 200px; */
   cursor: pointer;
   opacity: 1;
   display: flex;
   top: 0;
   transition: 2s all ease;
-  @media screen and (max-width: 690px) {
-    width: auto;
-    height: 100vh;
-  }
+  z-index: 2;
+`;
+
+export const LinkWrapper2 = styled(Link)`
+  position: fixed;
+  left: 0vw;
+  height: 100vh;
+  width: auto;
+  /* width: 200px; */
+  cursor: pointer;
+  opacity: 1;
+  display: flex;
+  top: 0;
+  transition: 2s all ease;
+  z-index: 2;
 `;
 
 export const ArrowRight = styled(Lottie)`

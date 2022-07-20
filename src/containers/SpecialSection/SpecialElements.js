@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
-import next from "../../images/Next.png";
 import { motion } from "framer-motion";
 
 export const SpecialContainer = styled(motion.div)`
   width: 100%;
   height: 100vh;
-  padding: 2.6vw 7.29vw;
+  padding: 5.6vw 7.29vw;
   /* padding: 270px 140px 50px 140px; */
   background: linear-gradient(89deg, #000b1e 0%, #002549c9 100%);
   z-index: 2;
@@ -17,7 +16,7 @@ export const SpecialContainer = styled(motion.div)`
   flex-direction: column;
   @media screen and (max-width: 690px) {
     padding: 10px 30px;
-    height: 120vh;
+    height: 100vh;
   }
 `;
 
@@ -164,19 +163,18 @@ export const SpecialImgWrapper = styled.div`
 `;
 
 export const LinkWrapper = styled(Link)`
-  position: absolute;
-  right: 0vw;
-  height: 100%;
+  position: fixed;
+  left: 0vw;
+  height: 100vh;
+  width: auto;
   /* width: 200px; */
-  cursor: url(${next}), auto;
+  cursor: pointer;
   opacity: 1;
   display: flex;
   top: 0;
   transition: 2s all ease;
-
-  @media screen and (max-width: 690px) {
-    width: auto;
-  }
+  transform: rotate(180deg);
+  z-index: 2;
 `;
 
 export const ArrowRight = styled(Lottie)`
@@ -190,7 +188,7 @@ export const ArrowRight = styled(Lottie)`
 `;
 
 export const LinkWrapper2 = styled(Link)`
-  position: absolute;
+  position: fixed;
   left: 0vw;
   height: 98%;
   width: 7.42vw;
@@ -204,7 +202,7 @@ export const LinkWrapper2 = styled(Link)`
 
   @media screen and (max-width: 690px) {
     width: auto;
-    height: 120vh;
+    height: 100vh;
   }
 `;
 

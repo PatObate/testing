@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import img from "../../images/backgroundmobile.jpg";
+import img from "../../images/clouds.png";
 
 export const VidContainer = styled(motion.div)`
   position: fixed;
@@ -34,12 +34,13 @@ export const HeroContainer = styled(motion.div)`
   position: fixed;
   width: 100%;
   height: 100vh;
-  padding: 4.69vw 9.9vw;
+  padding: 5.6vw 7.29vw;
   /* padding: 90px 190px; */
   background: transparent;
   z-index: 2;
   @media screen and (max-width: 690px) {
-    background: linear-gradient(89deg, #14161a 0%, #0e264cc7 100%), url(${img});
+    background: linear-gradient(180deg, #14161a6b 0%, #0e264ccc 100%),
+      url(${img});
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -158,8 +159,7 @@ export const HeroDataMob = styled.div`
     justify-content: space-between;
     width: 100%;
     flex-direction: column;
-    height: 248px;
-    padding-bottom: 40px;
+    height: 300px;
   }
 `;
 
@@ -246,22 +246,17 @@ export const ArrowRight = styled(Lottie)`
 `;
 
 export const LinkWrapper = styled(Link)`
-  position: absolute;
+  position: fixed;
   right: 0vw;
-  overflow: hidden;
-  height: 98%;
-  width: 8.42vw;
+  height: 100vh;
+  width: auto;
   /* width: 200px; */
   cursor: pointer;
   opacity: 1;
   display: flex;
   top: 0;
   transition: 2s all ease;
+  z-index: 2;
   opacity: ${({ opac }) => (opac ? "0" : "1")};
   display: ${({ none }) => (none ? "none" : "flex")};
-
-  @media screen and (max-width: 690px) {
-    width: auto;
-    height: 100vh;
-  }
 `;

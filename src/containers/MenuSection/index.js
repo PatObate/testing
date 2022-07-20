@@ -35,7 +35,7 @@ const containerVariants = {
     transition: { delay: 1, duration: 0.5 },
   },
   hidden3: {
-    background: "linear-gradient(89deg, #000b1e 0%, #002549c9 100%)",
+    background: "linear-gradient(358deg, #000b1e 0%, #002549c9 100%)",
   },
   visible3: {
     transition: { delay: 1, duration: 0.5 },

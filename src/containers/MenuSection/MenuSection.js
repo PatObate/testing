@@ -7,9 +7,10 @@ export const MenuContainer = styled(motion.div)`
   width: 100%;
   height: 100vh;
   background: #182436;
-  padding: 2.6vw 12.29vw 2.6vw 7.29vw;
+  padding: 5.6vw 12.29vw 5.6vw 7.29vw;
   @media screen and (max-width: 690px) {
     padding: 10px 30px;
+    overflow: hidden;
   }
 `;
 
@@ -86,10 +87,10 @@ export const Volumediv = styled(motion.div)`
 `;
 
 export const LinkWrapper2 = styled(Link)`
-  position: absolute;
+  position: fixed;
   left: 0vw;
-  height: 98%;
-  width: 7.42vw;
+  height: 100vh;
+  width: auto;
   /* width: 200px; */
   cursor: pointer;
   opacity: 1;
@@ -97,12 +98,7 @@ export const LinkWrapper2 = styled(Link)`
   top: 0;
   transition: 2s all ease;
   transform: rotate(180deg);
-
-  @media screen and (max-width: 690px) {
-    width: auto;
-    z-index: 2;
-    height: 100vh;
-  }
+  z-index: 2;
 `;
 
 export const ArrowDiv = styled(motion.div)``;

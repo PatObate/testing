@@ -6,12 +6,11 @@ import { motion } from "framer-motion";
 export const PoeContainer = styled(motion.div)`
   width: 100%;
   height: 100vh;
-  padding: 2.6vw 12.29vw 2.6vw 7.29vw;
+  padding: 5.6vw 7.29vw;
   @media screen and (max-width: 690px) {
     padding: 10px 30px;
-    height: 120vh;
+    height: 100vh;
   }
-
 `;
 
 export const PoeWrapper = styled.div`
@@ -59,10 +58,10 @@ export const ArrowRight = styled(Lottie)`
 `;
 
 export const LinkWrapper2 = styled(Link)`
-  position: absolute;
+  position: fixed;
   left: 0vw;
-  height: 98%;
-  width: 7.42vw;
+  height: 100vh;
+  width: auto;
   /* width: 200px; */
   cursor: pointer;
   opacity: 1;
@@ -70,18 +69,14 @@ export const LinkWrapper2 = styled(Link)`
   top: 0;
   transition: 2s all ease;
   transform: rotate(180deg);
-
-  @media screen and (max-width: 690px) {
-    width: auto;
-    height: 120vh;
-  }
+  z-index: 2;
 `;
 
 export const CardContainer = styled.div`
-  height: 38.78vw;
+  height: auto;
   width: 27.5vw;
-  background: #313a4c;
-  border-radius: 3.28vw;
+  background: white;
+  border-radius: 1.28vw;
   padding: 2.34vw 2.08vw;
   display: flex;
   align-items: flex-end;
@@ -89,7 +84,8 @@ export const CardContainer = styled.div`
   flex-direction: column;
   @media screen and (max-width: 690px) {
     width: 100%;
-    height: 600px;
+    height: auto;
+    border-radius: 25px;
     padding: 20px 15px;
   }
 `;
@@ -99,7 +95,7 @@ export const CardWrapper = styled.div``;
 export const CardHeader = styled.h2`
   font-family: "Poppins", sans-serif;
   font-size: 1.41vw;
-  color: white;
+  color: #08111b;
   font-weight: 600;
   padding-bottom: 0.83vw;
   @media screen and (max-width: 690px) {
@@ -131,11 +127,14 @@ export const CardSource = styled.source``;
 export const CardData = styled.p`
   font-family: "Poppins", sans-serif;
   font-size: 0.83vw;
-  color: white;
-  font-weight: 100;
+  color: #111830;
+  font-weight: 300;
+  line-height: 2;
   text-align: left;
+  padding-bottom: 0.83vw;
   @media screen and (max-width: 690px) {
     font-size: 13px;
+    padding-bottom: 10px;
   }
 `;
 

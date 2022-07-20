@@ -11,18 +11,20 @@ export const PoeContainer = styled.div`
     url(${img});
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
-  padding: 2.6vw 7.29vw;
+  padding: 5.6vw 7.29vw;
   @media screen and (max-width: 690px) {
     padding: 10px 30px;
-    height: 120vh;
+    height: 100vh;
+    display: block;
   }
 `;
 
 export const PoeWrapper = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   @media screen and (max-width: 690px) {
     height: 100%;
     flex-direction: column;
@@ -87,10 +89,10 @@ export const ArrowRight = styled(Lottie)`
 `;
 
 export const LinkWrapper2 = styled(Link)`
-  position: absolute;
+  position: fixed;
   left: 0vw;
-  height: 98%;
-  width: 7.42vw;
+  height: 100vh;
+  width: auto;
   /* width: 200px; */
   cursor: pointer;
   opacity: 1;
@@ -98,19 +100,16 @@ export const LinkWrapper2 = styled(Link)`
   top: 0;
   transition: 2s all ease;
   transform: rotate(180deg);
-  @media screen and (max-width: 690px) {
-    width: auto;
-    height: 120vh;
-  }
+  z-index: 2;
 `;
 
 export const ArrowDiv = styled(motion.div)``;
 
 export const CardContainer = styled.div`
   height: 35.99vw;
-  width: 45.57vw;
-  background: #313a4c;
-  border-radius: 3.28vw;
+  width: 52.57vw;
+  background: white;
+  border-radius: 1.28vw 0vw 0vw 1.28vw;
   padding: 4.17vw 3.13vw;
   display: flex;
   align-items: flex-end;
@@ -119,8 +118,9 @@ export const CardContainer = styled.div`
   position: relative;
   @media screen and (max-width: 690px) {
     width: 100%;
-    height: 550px;
+    height: auto;
     padding: 20px 15px;
+    border-radius: 25px;
   }
 `;
 
@@ -131,7 +131,7 @@ export const CardWrapper = styled.div`
 export const CardHeader = styled.h2`
   font-family: "Poppins", sans-serif;
   font-size: 1.41vw;
-  color: white;
+  color: #08111b;
   font-weight: 600;
   padding-bottom: 1.41vw;
   @media screen and (max-width: 690px) {
@@ -151,8 +151,9 @@ export const CardHeaderMob = styled.h2`
 export const CardData = styled.p`
   font-family: "Poppins", sans-serif;
   font-size: 0.83vw;
-  color: white;
-  font-weight: 100;
+  color: #111830;
+  font-weight: 300;
+  line-height: 2;
   text-align: left;
   @media screen and (max-width: 690px) {
     font-size: 13px;
@@ -200,9 +201,9 @@ export const CardSource = styled.source``;
 
 export const CardContainer2 = styled.div`
   height: 35.99vw;
-  width: 35.42vw;
-  background: #313a4c;
-  border-radius: 3.28vw;
+  width: 32.42vw;
+  background: #171b236e;
+  border-radius: 0vw 1.28vw 1.28vw 0vw;
   padding: ${({ triplewidth }) =>
     triplewidth ? " 3.96vw 0.79vw" : " 3.96vw 4.79vw"};
   display: flex;
@@ -254,6 +255,7 @@ export const CardImg2Mob = styled.div`
     position: absolute;
     filter: ${({ highlight }) => (highlight ? "hue-rotate(3deg)" : "")};
     background: ${({ highlight }) => (highlight ? "#0037ffcc" : "#425893ba")};
+    mix-blend-mode: ${({ highlight }) => (highlight ? "hard-light" : "color")};
     z-index: 2;
     /* top: 70px; */
     transition: 0.7s all ease;
@@ -285,6 +287,7 @@ export const CardBox2 = styled.div`
     position: absolute;
     filter: ${({ highlight }) => (highlight ? "hue-rotate(3deg)" : "")};
     background: ${({ highlight }) => (highlight ? "#0037ffcc" : "#425893ba")};
+    mix-blend-mode: ${({ highlight }) => (highlight ? "hard-light" : "color")};
     z-index: 1;
     /* top: 70px; */
     transition: 0.7s all ease;

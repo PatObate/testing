@@ -56,7 +56,7 @@ const containerVariants = {
     transition: { delay: 1, duration: 0.5 },
   },
   hidden3: {
-    background: "linear-gradient(89deg, #000b1e 0%, #002549c9 100%)",
+    background: "linear-gradient(358deg, #000b1e 0%, #002549c9 100%)",
   },
   visible3: {
     transition: { delay: 1, duration: 0.5 },
@@ -129,7 +129,7 @@ const SupportSection = () => {
                           <LinkWrapperImg2 to="/special">
                             <SupportImgMob
                               style={{
-                                background: `  linear-gradient(89deg,#14161aab 0%,#0e264cb5 100%), url(${img})`,
+                                background: `linear-gradient(89deg,#14161aab 0%,#0e264cb5 100%), url(${img})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                                 backgroundRepeat: "no-repeat",

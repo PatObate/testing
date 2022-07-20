@@ -282,6 +282,8 @@ export const NavImg = styled(NavLink)`
   }
   @media screen and (max-width: 690px) {
     transition: 0.3s all ease-in-out;
+    bottom: -9.38vw;
+    right: 7.97vw;
   }
 `;
 
@@ -310,6 +312,8 @@ export const NavImg2 = styled(NavLink)`
   }
   @media screen and (max-width: 690px) {
     transition: 0.3s all ease-in-out;
+    top: 16.56vw;
+    right: -6.98vw;
   }
 `;
 export const NavImg3 = styled(NavLink)`
@@ -337,6 +341,8 @@ export const NavImg3 = styled(NavLink)`
   }
   @media screen and (max-width: 690px) {
     transition: 0.3s all ease-in-out;
+    top: -0.57vw;
+    right: -7.08vw;
   }
 `;
 export const NavImg4 = styled(NavLink)`
@@ -364,6 +370,8 @@ export const NavImg4 = styled(NavLink)`
     transition: 0.5s all ease-in-out;
   }
   @media screen and (max-width: 690px) {
+    top: -9.38vw;
+    right: 7.71vw;
     transition: 0.3s all ease-in-out;
   }
 `;
@@ -393,6 +401,8 @@ export const NavImg5 = styled(NavLink)`
   }
   @media screen and (max-width: 690px) {
     transition: 0.3s all ease-in-out;
+    left: -7.03vw;
+    top: -0.89vw;
   }
 `;
 export const NavImg6 = styled(NavLink)`
@@ -420,6 +430,8 @@ export const NavImg6 = styled(NavLink)`
   }
   @media screen and (max-width: 690px) {
     transition: 0.3s all ease-in-out;
+    bottom: -0.68vw;
+    left: -7.14vw;
   }
 `;
 

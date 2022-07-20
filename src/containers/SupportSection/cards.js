@@ -3,7 +3,8 @@ const Cards = [
     id: 1,
     img: require("../../images/ksa.jpg"),
     Bold: "Riyadh",
-    Light: "KSA",
+    Light:
+    "Office No. 1004-1006, 10th Floor, Marina Plaza, Dubai, United Arab Emirates",
   },
   {
     id: 2,

@@ -22,9 +22,6 @@ export const MenuNavWrapper = styled.div`
   background: #08111b;
   box-shadow: #08111b;
   transition: 1s all ease;
-  @media screen and (max-width: 690px) {
-    transform: scale(2);
-  }
 `;
 export const MenuNav = styled.div`
   width: 31.25vw;
