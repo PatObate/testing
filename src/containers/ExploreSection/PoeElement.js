@@ -117,11 +117,20 @@ export const CardContainer = styled.div`
   flex-direction: column;
   position: relative;
   @media screen and (max-width: 690px) {
-    width: 100%;
-    height: auto;
-    padding: 20px 15px;
-    border-radius: 25px;
+    display: none;
   }
+`;
+export const CardContainerMob = styled.div`
+  width: 100%;
+  height: auto;
+  background: white;
+  border-radius: 0px 0px 25px 25px;
+  padding: 20px 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
 `;
 
 export const CardWrapper = styled.div`
@@ -137,15 +146,6 @@ export const CardHeader = styled.h2`
   @media screen and (max-width: 690px) {
     display: none;
   }
-`;
-
-export const CardHeaderMob = styled.h2`
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  color: white;
-  font-weight: 600;
-  text-align: center;
-  z-index: 3;
 `;
 
 export const CardData = styled.p`
@@ -236,32 +236,6 @@ export const CardRow2 = styled.div`
   justify-content: space-between;
 `;
 
-export const CardImg2Mob = styled.div`
-  height: 100px;
-  width: 200px;
-  border-radius: 25px;
-  padding: 20px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  &:before {
-    content: "";
-    top: 0;
-    width: 200px;
-    border-radius: 25px;
-    height: 100px;
-    position: absolute;
-    filter: ${({ highlight }) => (highlight ? "hue-rotate(3deg)" : "")};
-    background: ${({ highlight }) => (highlight ? "#0037ffcc" : "#425893ba")};
-    mix-blend-mode: ${({ highlight }) => (highlight ? "hard-light" : "color")};
-    z-index: 2;
-    /* top: 70px; */
-    transition: 0.7s all ease;
-  }
-`;
-
 export const CardMobWrapper = styled.div`
   display: flex;
 `;
@@ -279,6 +253,7 @@ export const CardBox2 = styled.div`
   align-items: center;
   justify-content: center;
   background-blend-mode: color-dodge;
+  z-index: 2;
   &:before {
     content: "";
     width: 10.63vw;
@@ -300,5 +275,126 @@ export const CardText2 = styled.h2`
   color: white;
   font-weight: 600;
   text-align: center;
+  z-index: 3;
+  @media screen and (max-width: 690px) {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    margin: auto;
+    z-index: 3;
+  }
+`;
+
+export const CardMobOption1 = styled.div`
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+  height: 50px;
+  transition: 0.7s all ease;
+  position: relative;
   z-index: 2;
+  background-blend-mode: color-dodge;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before {
+    z-index: 1;
+    content: "";
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    height: 50px;
+    position: absolute;
+    filter: ${({ highlight }) => (highlight ? "hue-rotate(3deg)" : "")};
+    background: ${({ highlight }) => (highlight ? "#0037ffcc" : "#425893ba")};
+    mix-blend-mode: ${({ highlight }) => (highlight ? "hard-light" : "color")};
+    z-index: 1;
+    transition: 0.7s all ease;
+  }
+`;
+export const CardMobOption2 = styled.div`
+  width: 100%;
+  height: 50px;
+  transition: 0.7s all ease;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: ${({ noextra }) => (noextra ? "none" : "flex")};
+  z-index: 2;
+  &:before {
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    filter: ${({ highlight }) => (highlight ? "hue-rotate(3deg)" : "")};
+    background: ${({ highlight }) => (highlight ? "#0037ffcc" : "#425893ba")};
+    mix-blend-mode: ${({ highlight }) => (highlight ? "hard-light" : "color")};
+    z-index: 1;
+    transition: 0.7s all ease;
+  }
+`;
+export const CardMobOption3 = styled.div`
+  width: 100%;
+  height: 50px;
+  transition: 0.7s all ease;
+  display: ${({ fourfivextra }) => (fourfivextra ? "none" : "flex")};
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  &:before {
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    filter: ${({ highlight }) => (highlight ? "hue-rotate(3deg)" : "")};
+    background: ${({ highlight }) => (highlight ? "#0037ffcc" : "#425893ba")};
+    mix-blend-mode: ${({ highlight }) => (highlight ? "hard-light" : "color")};
+    z-index: 1;
+    transition: 0.7s all ease;
+  }
+`;
+export const CardMobOption4 = styled.div`
+  width: 100%;
+  height: 50px;
+  transition: 0.7s all ease;
+  position: relative;
+  display: ${({ fiveextra }) => (fiveextra ? "none" : "flex")};
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  &:before {
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    filter: ${({ highlight }) => (highlight ? "hue-rotate(3deg)" : "")};
+    background: ${({ highlight }) => (highlight ? "#0037ffcc" : "#425893ba")};
+    mix-blend-mode: ${({ highlight }) => (highlight ? "hard-light" : "color")};
+    z-index: 1;
+    transition: 0.7s all ease;
+  }
+`;
+export const CardMobOption5 = styled.div`
+  width: 100%;
+  height: 50px;
+  transition: 0.7s all ease;
+  position: relative;
+  display: ${({ sixextra }) => (sixextra ? "none" : "flex")};
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  &:before {
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    filter: ${({ highlight }) => (highlight ? "hue-rotate(3deg)" : "")};
+    background: ${({ highlight }) => (highlight ? "#0037ffcc" : "#425893ba")};
+    mix-blend-mode: ${({ highlight }) => (highlight ? "hard-light" : "color")};
+    z-index: 1;
+    transition: 0.7s all ease;
+  }
 `;

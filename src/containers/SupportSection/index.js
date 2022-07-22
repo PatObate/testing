@@ -93,7 +93,7 @@ const SupportSection = () => {
           animate="visible4"
           exit="exit"
         >
-          <LinkWrapper2 to="/landing">
+          <LinkWrapper2 to="/client">
             <ArrowLeft animationData={arrow} />
           </LinkWrapper2>
         </ArrowDiv>

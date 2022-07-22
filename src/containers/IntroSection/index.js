@@ -51,8 +51,8 @@ const IntroSection = () => {
           exit="exit"
         >
           <Volume animationData={vol} />
-          <IntroOption to="/landing">Yes</IntroOption>
-          <IntroOption to="/landing">No</IntroOption>
+          <IntroOption to="/intro">Yes</IntroOption>
+          <IntroOption to="/intro">No</IntroOption>
         </IntroCard>
       </IntroBackground>
     </>

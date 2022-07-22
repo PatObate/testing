@@ -190,8 +190,8 @@ export const ArrowRight = styled(Lottie)`
 export const LinkWrapper2 = styled(Link)`
   position: fixed;
   left: 0vw;
-  height: 98%;
-  width: 7.42vw;
+  height: 100vh;
+  width: auto;
   /* width: 200px; */
   cursor: pointer;
   opacity: 1;
@@ -199,11 +199,6 @@ export const LinkWrapper2 = styled(Link)`
   top: 0;
   transition: 2s all ease;
   transform: rotate(180deg);
-
-  @media screen and (max-width: 690px) {
-    width: auto;
-    height: 100vh;
-  }
 `;
 
 export const ArrowDiv = styled(motion.div)``;

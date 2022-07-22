@@ -13,7 +13,7 @@ export const NavWrapper = styled(NavLink)`
     transition: 0.5s all ease-in-out;
   }
   @media screen and (max-width: 690px) {
-    fill: #2648ff;
+    fill: #0f29b4;
   }
 `;
 

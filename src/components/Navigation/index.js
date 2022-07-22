@@ -88,12 +88,6 @@ const Navigation = () => {
         </MenuSub6>
         <MenuNav>
           <Circle animationData={circle} />
-          <TextImg1 src={PeoImg} alt="pic" />
-          <TextImg2 src={OutsourcingImg} alt="pic2" />
-          <TextImg3 src={StaffingImg} alt="pic3" />
-          <TextImg4 src={HrTechImg} alt="pic4" />
-          <TextImg5 src={RemoteImg} alt="pic5" />
-          <TextImg6 src={ExpertImg} alt="pic6" />
           <NavImg
             to="/hrtechnology"
             onMouseEnter={handleToggle4}
