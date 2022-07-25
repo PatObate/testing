@@ -3,6 +3,7 @@ import Navigation from "../../components/Navigation";
 import {
   ArrowRight,
   LinkWrapper2,
+  LinkWrapperWhole,
   MenuContainer,
   MenuContent,
   MenuDiv,
@@ -14,6 +15,9 @@ import arrow from "../../lotties/arrow.json";
 import menu from "../../music/menusong.mp3";
 
 const containerVariants = {
+  hiddenarrow: {
+    opacity: 0,
+  },
   hidden: {
     opacity: 0,
     y: "2.60vw",
@@ -38,9 +42,7 @@ const containerVariants = {
   hidden3: {
     background: "linear-gradient(358deg, #000b1e 0%, #002549c9 100%)",
   },
-  visible3: {
-    transition: { delay: 1, duration: 0.5 },
-  },
+  visible3: {},
   hidden4: {
     opacity: 0,
   },
@@ -69,9 +71,16 @@ const MenuSection = () => {
         initial="hidden3"
         animate="visible3"
       >
-        <LinkWrapper2 to="/support">
-          <ArrowRight animationData={arrow} />
-        </LinkWrapper2>
+        <LinkWrapperWhole
+          variants={containerVariants}
+          initial="hiddenarrow"
+          animate="visible"
+          exit="exit"
+        >
+          <LinkWrapper2 to="/support">
+            <ArrowRight animationData={arrow} />
+          </LinkWrapper2>
+        </LinkWrapperWhole>
 
         <MenuContent
           variants={containerVariants}

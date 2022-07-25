@@ -147,7 +147,7 @@ export const RemoteWorkData = {
     "A comprehensive solution to enable you to quickly set up a dedicated offshore center and physical office to support your business requirements. This includes office space, workstations, IT Infrastructure, security, employees, managers and software to track workload allocations delivered. This service is suitable for companies looking to mobilize a minimum of 30 offshore employees.",
   triple: "true",
   hexa: "true",
-  quadra: "true",
+  penta: "true",
 };
 
 export const ExpertConsultData = {

@@ -79,6 +79,12 @@ export const SideBarLink = styled(Link)`
   font-weight: 300;
   border-bottom: 0.01vw solid gray;
   width: 100%;
+  transition: all 0.3s ease 0s;
+  :hover {
+    color: #007bff;
+    border-bottom: 0.01vw solid #007bff;
+    transition: all 0.3s ease 0s;
+  }
   @media screen and (max-width: 690px) {
     padding-bottom: 15px;
     border-bottom: 0.1px solid gray;
@@ -93,9 +99,16 @@ export const SidebarIcons = styled.div`
   justify-content: space-around;
 `;
 
+export const SideBarIconLink = styled.a``;
+
 export const SideLI = styled(AiFillLinkedin)`
   font-size: 1vw;
   color: #0a2c4e;
+  transition: all 0.3s ease 0s;
+  :hover {
+    color: #007bff;
+    transition: all 0.3s ease 0s;
+  }
   @media screen and (max-width: 690px) {
     font-size: 30px;
   }
@@ -103,6 +116,11 @@ export const SideLI = styled(AiFillLinkedin)`
 export const SidePH = styled(AiFillPhone)`
   font-size: 1vw;
   color: #0a2c4e;
+  transition: all 0.3s ease 0s;
+  :hover {
+    color: #007bff;
+    transition: all 0.3s ease 0s;
+  }
   @media screen and (max-width: 690px) {
     font-size: 30px;
   }
@@ -110,6 +128,11 @@ export const SidePH = styled(AiFillPhone)`
 export const SideML = styled(AiFillMail)`
   font-size: 1vw;
   color: #0a2c4e;
+  transition: all 0.3s ease 0s;
+  :hover {
+    color: #007bff;
+    transition: all 0.3s ease 0s;
+  }
   @media screen and (max-width: 690px) {
     font-size: 30px;
   }
@@ -118,6 +141,11 @@ export const SideML = styled(AiFillMail)`
 export const SideIg = styled(AiFillInstagram)`
   font-size: 1vw;
   color: #0a2c4e;
+  transition: all 0.3s ease 0s;
+  :hover {
+    color: #007bff;
+    transition: all 0.3s ease 0s;
+  }
   @media screen and (max-width: 690px) {
     font-size: 30px;
   }

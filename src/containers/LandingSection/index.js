@@ -19,6 +19,7 @@ import {
   ClientWord,
   ClientWord2,
   LinkWrapper,
+  LinkWrapperWhole,
 } from "./ClientElements";
 import background from "../../videos/clientbackground.mov";
 import logo from "../../svgs/Logo.svg";
@@ -41,6 +42,36 @@ const LandingSection = () => {
     }, 4000);
   }, []);
 
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+      x: "-2.60vw",
+    },
+    hidden2: {
+      opacity: 0,
+      y: "2.60vw",
+    },
+    visible: {
+      x: "0vw",
+      opacity: 1,
+      transition: { delay: 1, duration: 0.5 },
+    },
+    visible2: {
+      x: "0vw",
+      opacity: 1,
+      transition: { delay: 1.5, duration: 0.5 },
+    },
+    visible3: {
+      y: "0vw",
+      opacity: 1,
+      transition: { delay: 2, duration: 0.5 },
+    },
+    exit: {
+      opacity: 0,
+      transition: { duration: 0.5 },
+    },
+  };
+
   return (
     <>
       <ClientVidContainer>
@@ -49,10 +80,24 @@ const LandingSection = () => {
         </BackgroundClientVideo>
       </ClientVidContainer>
       <ClientContainer>
-        <ClientLogo src={logo} alt="Logo" />
+        <ClientLogo
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          src={logo}
+          alt="Logo"
+        />
         <div />
         <ClientHolder>
-          <ClientHeader>
+          <ClientHeader
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible2"
+            exit="exit"
+            src={logo}
+            alt="Logo"
+          >
             The leading <ClientSpan>HR and Employee Outsourcing </ClientSpan>
             Provider in the UAE, powered by
             <ClientSpan> People, Technology</ClientSpan> and
@@ -60,7 +105,14 @@ const LandingSection = () => {
           </ClientHeader>
         </ClientHolder>
 
-        <ClientContacts>
+        <ClientContacts
+          variants={containerVariants}
+          initial="hidden2"
+          animate="visible3"
+          exit="exit"
+          src={logo}
+          alt="Logo"
+        >
           <ClientWord>Find us on:</ClientWord>
           <ClientContactDiv>
             <ClientContact>
@@ -73,9 +125,11 @@ const LandingSection = () => {
             </ClientContact2>
           </ClientContactDiv>
         </ClientContacts>
-        <LinkWrapper to="/client" none={arrowAnim} opac={arrowAnim2}>
-          <ArrowRight animationData={arrow} />
-        </LinkWrapper>
+        <LinkWrapperWhole variants={containerVariants} exit="exit">
+          <LinkWrapper to="/client" none={arrowAnim} opac={arrowAnim2}>
+            <ArrowRight animationData={arrow} />
+          </LinkWrapper>
+        </LinkWrapperWhole>
       </ClientContainer>
     </>
   );

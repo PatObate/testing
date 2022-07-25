@@ -48,7 +48,7 @@ export const ClientContainer = styled(motion.div)`
   }
 `;
 
-export const ClientLogo = styled.img`
+export const ClientLogo = styled(motion.img)`
   width: 10%;
   height: auto;
   position: absolute;
@@ -69,7 +69,7 @@ export const ClientHolder = styled.div`
   }
 `;
 
-export const ClientHeader = styled.h1`
+export const ClientHeader = styled(motion.h1)`
   font-family: "Poppins", sans-serif;
   font-size: 1.82vw;
   width: 41.98vw;
@@ -101,7 +101,7 @@ export const BackgroundClientVideo = styled.video`
 
 export const ClientSource = styled.source``;
 
-export const ClientContacts = styled.div`
+export const ClientContacts = styled(motion.div)`
   width: 57.55vw;
   @media screen and (max-width: 690px) {
     width: 100%;
@@ -237,4 +237,10 @@ export const LinkWrapper = styled(Link)`
   z-index: 2;
   opacity: ${({ opac }) => (opac ? "0" : "1")};
   display: ${({ none }) => (none ? "none" : "flex")};
+`;
+
+export const LinkWrapperWhole = styled(motion.div)`
+  position: fixed;
+  right: 0vw;
+  cursor: pointer;
 `;

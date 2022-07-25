@@ -171,7 +171,12 @@ const SupportSection = () => {
             </SupportWrapper>
           </SupportContent2>
         </SupportContent>
-        <ArrowDiv>
+        <ArrowDiv
+          variants={containerVariants}
+          initial="hidden4"
+          animate="visible4"
+          exit="exit"
+        >
           <LinkWrapper to="/menu">
             <ArrowRight animationData={arrow} />
           </LinkWrapper>

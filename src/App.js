@@ -19,6 +19,7 @@ import Landing from "./pages/Landing";
 import About from "./pages/About";
 import Client from "./pages/Client";
 import Sidebar from "./components/Sidebar";
+import Contact from "./pages/Contact";
 
 function App() {
   const location = useLocation();
@@ -59,6 +60,7 @@ function App() {
           <Route path="/landing" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/special" element={<Special />} />
           <Route path="/client" element={<Client />} />
           <Route path="/menu" element={<Menu />} />

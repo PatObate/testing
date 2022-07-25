@@ -294,7 +294,7 @@ const MenuSelectSection = ({
                     onClick={() => toggleTab(2)}
                     highlight={toggleState === 2 ? true : false}
                   >
-                    <CardText2>{header}</CardText2>
+                    <CardText2>{header1}</CardText2>
                   </CardBox2>
                   <CardBox2
                     style={{

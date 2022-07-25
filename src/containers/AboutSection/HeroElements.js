@@ -69,15 +69,6 @@ export const HeroLogo = styled.img`
   display: block;
   margin: auto;
   @media screen and (max-width: 690px) {
-    display: none;
-  }
-`;
-export const HeroLogoMob = styled.img`
-  @media screen and (min-width: 691px) {
-    display: none;
-  }
-  @media screen and (max-width: 690px) {
-    display: block;
     max-width: 100%;
     height: auto;
     padding-bottom: 1.82vw;
@@ -95,15 +86,6 @@ export const HeroHeader = styled.h1`
   /* padding-bottom: 88px; */
   text-align: center;
   @media screen and (max-width: 690px) {
-    display: none;
-  }
-`;
-export const HeroHeaderMob = styled.h1`
-  @media screen and (min-width: 691px) {
-    display: none;
-  }
-  @media screen and (max-width: 690px) {
-    display: block;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     /* font-size: 65px; */
@@ -147,17 +129,7 @@ export const HeroData = styled.div`
   justify-content: space-between;
   width: 36.46vw;
   @media screen and (max-width: 690px) {
-    display: none;
-  }
-`;
-
-export const HeroDataMob = styled.div`
-  @media screen and (min-width: 691px) {
-    display: none;
-  }
-  @media screen and (max-width: 690px) {
     align-items: center;
-    display: flex;
     justify-content: space-between;
     width: 100%;
     flex-direction: column;
@@ -196,14 +168,6 @@ export const HeroVideoWrapper = styled.div`
   right: 2.86vw;
   /* right: 55px; */
   @media screen and (max-width: 690px) {
-    display: none;
-  }
-`;
-export const HeroVideoWrapperMob = styled.div`
-  @media screen and (min-width: 691px) {
-    display: none;
-  }
-  @media screen and (max-width: 690px) {
     display: block;
     overflow: hidden;
     z-index: 3;
@@ -237,7 +201,6 @@ export const HeroSource = styled.source``;
 
 export const ArrowDiv = styled(motion.div)``;
 
-
 export const LinkWrapper2 = styled(Link)`
   position: fixed;
   left: 0vw;
@@ -251,7 +214,6 @@ export const LinkWrapper2 = styled(Link)`
   transition: 2s all ease;
   transform: rotate(180deg);
 `;
-
 
 export const ArrowRight = styled(Lottie)`
   z-index: 1;
@@ -274,7 +236,7 @@ export const LinkWrapper = styled(Link)`
   display: flex;
   top: 0;
   transition: 2s all ease;
-  z-index: 2;
+  z-index: 1;
   opacity: ${({ opac }) => (opac ? "0" : "1")};
   display: ${({ none }) => (none ? "none" : "flex")};
 `;

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 export const MenuContainer = styled(motion.div)`
   width: 100%;
   height: 100vh;
+  position: relative;
   background: #182436;
   padding: 5.6vw 12.29vw 5.6vw 7.29vw;
   @media screen and (max-width: 690px) {
@@ -64,7 +65,6 @@ export const ArrowRight = styled(Lottie)`
   z-index: 1;
   height: auto;
   width: 7.42vw;
-  /* width: 200px; */
   @media screen and (max-width: 690px) {
     width: 70px;
   }
@@ -86,9 +86,18 @@ export const Volumediv = styled(motion.div)`
   /* width: 200px; */
 `;
 
-export const LinkWrapper2 = styled(Link)`
+export const LinkWrapperWhole = styled(motion.div)`
   position: fixed;
   left: 0vw;
+  top: 0vw;
+  cursor: pointer;
+  @media screen and (max-width: 690px) {
+    bottom: 10px;
+    top: auto;
+  }
+`;
+
+export const LinkWrapper2 = styled(Link)`
   height: 100vh;
   width: auto;
   /* width: 200px; */
@@ -96,12 +105,13 @@ export const LinkWrapper2 = styled(Link)`
   opacity: 1;
   display: flex;
   top: 0;
-  transition: 2s all ease;
   transform: rotate(180deg);
+  transition: 2s all ease;
   z-index: 2;
+  opacity: ${({ opac }) => (opac ? "0" : "1")};
+  display: ${({ none }) => (none ? "none" : "flex")};
   @media screen and (max-width: 690px) {
-    top: 85vh;
-    height: 15vh;
+    height: auto;
   }
 `;
 

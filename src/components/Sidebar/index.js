@@ -2,6 +2,7 @@ import React from "react";
 import {
   SidebarBackground,
   SidebarContainer,
+  SideBarIconLink,
   SidebarIcons,
   SideBarLink,
   SideBarLogo,
@@ -32,10 +33,24 @@ const Sidebar = ({ toggle, isOpen }) => {
             <SideBarLink to="/expertconsulting">Expert Consulting</SideBarLink>
           </div>
           <SidebarIcons>
-            <SideLI />
-            <SidePH />
-            <SideML />
-            <SideIg />
+            <SideBarIconLink
+              href="https://www.linkedin.com/company/nathan-&-nathan/"
+              target="_blank"
+            >
+              <SideLI />
+            </SideBarIconLink>
+            <SideBarIconLink href="tel:+971 4 354 4466">
+              <SidePH />
+            </SideBarIconLink>
+            <SideBarIconLink href="mailto:info@nathanhr.com">
+              <SideML />
+            </SideBarIconLink>
+            <SideBarIconLink
+              href="https://www.instagram.com/nathan_nathan.inc/"
+              target="_blank"
+            >
+              <SideIg />
+            </SideBarIconLink>
           </SidebarIcons>
         </SidebarContainer>
       </SidebarBackground>

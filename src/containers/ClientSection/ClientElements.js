@@ -19,7 +19,7 @@ export const LandingContainer = styled(motion.div)`
   }
 `;
 
-export const LandingHolder = styled.div`
+export const LandingHolder = styled(motion.div)`
   width: 57.55vw;
   @media screen and (max-width: 690px) {
     width: 100%;
@@ -96,7 +96,7 @@ export const LandingPicXLarge = styled.img`
   border-radius: 0.5vw;
   margin: 0.5vw;
   transition: all 0.3s ease-in-out;
-  
+
   :hover {
     transition: all 0.3s ease-in-out;
     transform: translateY(-0.52vw);
@@ -109,7 +109,7 @@ export const LandingPicXLarge = styled.img`
   }
 `;
 
-export const LandingHeader = styled.h1`
+export const LandingHeader = styled(motion.h2)`
   font-family: "Poppins", sans-serif;
   line-height: 1.8;
   font-size: 1.92vw;
@@ -126,8 +126,6 @@ export const LandingHeader = styled.h1`
 `;
 
 export const LinkWrapper2 = styled(Link)`
-  position: fixed;
-  left: 0vw;
   height: 100vh;
   width: auto;
   /* width: 200px; */
@@ -161,9 +159,18 @@ export const ArrowRight = styled(Lottie)`
   }
 `;
 
-export const LinkWrapper = styled(Link)`
+export const LinkWrapperWhole = styled(motion.div)`
   position: fixed;
   right: 0vw;
+  cursor: pointer;
+`;
+export const LinkWrapperWhole2 = styled(motion.div)`
+  position: fixed;
+  left: 0vw;
+  cursor: pointer;
+`;
+
+export const LinkWrapper = styled(Link)`
   height: 100vh;
   width: auto;
   /* width: 200px; */
