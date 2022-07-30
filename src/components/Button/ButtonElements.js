@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const StartButton = styled.div`
+export const StartButton = styled.button`
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
