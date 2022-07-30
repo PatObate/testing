@@ -1,0 +1,17 @@
+export const ActivityOne = {
+  header: "Freelance Activites Available",
+  sub: "We cover over 120+ activities.",
+  tag1: "Freedom and Marketing",
+  tag2: "Finance",
+  tag3: "Consulting",
+  tag4: "Media",
+  tag5: "IT",
+  tag6: "Social",
+  img1: require("../../../images/hornpc.png"),
+  img2: require("../../../images/moneybag.png"),
+  img3: require("../../../images/manheadphone.png"),
+  img4: require("../../../images/pentablet.png"),
+  img5: require("../../../images/touchpc.png"),
+  img6: require("../../../images/phonelike.png"),
+  lasttag: "and many more",
+};

@@ -1,1 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@100;300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+.carousel-root {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel {
+  width: 46.15625vw !important;
+}
+
+.carousel.carousel-slider {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left !important;
+}
+
+.pin-spacer {
+  background: #f8f8f3;
+}

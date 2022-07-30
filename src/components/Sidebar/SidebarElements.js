@@ -1,152 +1,123 @@
 import styled from "styled-components";
-import { AiOutlineClose } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillPhone } from "react-icons/ai";
-import { AiFillMail } from "react-icons/ai";
-import { AiFillInstagram } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-export const SidebarBackground = styled.div`
+export const SidebarContainer = styled.aside`
+  position: fixed;
+  z-index: 999;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  z-index: 20;
-  right: ${({ toggle }) => (toggle ? "0" : "-100vw")};
-  bottom: 0;
-  opacity: ${({ toggle }) => (toggle ? "1" : "0")};
-  transition: 0.3s all ease-in-out;
-  display: flex;
+  background: #f8f8f3;
+  display: grid;
   align-items: center;
-  justify-content: flex-end;
-  @media screen and (max-width: 690px) {
-    justify-content: center;
-  }
+  top: 0;
+  left: 0;
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-150%")};
+  transition: 0.3s ease-in-out;
 `;
 
-export const XIcon = styled(AiOutlineClose)`
-  opacity: ${({ toggle }) => (toggle ? "1" : "0")};
-  transition: 2s width ease-in-out;
-  height: 1.86vw;
-  width: 1.86vw;
-  position: absolute;
-  top: 2.3vw;
-  right: 1.29vw;
-  color: #6c757d;
-  cursor: pointer;
-  z-index: 2;
-  @media screen and (max-width: 690px) {
-    height: 30px;
-    width: 30px;
-  }
-`;
-
-export const SidebarContainer = styled.div`
-  width: 20.18vw;
-  transition: 0.8s width ease-in-out;
-  height: 100%;
-  padding: 2vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background: white;
-  @media screen and (max-width: 690px) {
-    width: 100%;
-  }
-`;
-
-export const SideBarLogo = styled.img`
-  width: 70%;
-  height: auto;
-  margin: auto;
-  padding-bottom: 0.63vw;
-  @media screen and (max-width: 690px) {
-    padding-bottom: 15px;
-  }
-`;
-
-export const SideBarLink = styled(Link)`
-  padding-bottom: 0.2vw;
-  margin: auto;
+export const Icon = styled.div`
   display: block;
-  margin-bottom: 0.43vw;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.83vw;
-  /* font-size: 60px; */
+  position: absolute;
+  top: 1px;
+  right: -37px;
+  transform: translate(-100%, 60%);
   color: black;
-  font-weight: 300;
-  border-bottom: 0.01vw solid gray;
-  width: 100%;
-  transition: all 0.3s ease 0s;
-  :hover {
-    color: #007bff;
-    border-bottom: 0.01vw solid #007bff;
-    transition: all 0.3s ease 0s;
-  }
-  @media screen and (max-width: 690px) {
-    padding-bottom: 15px;
-    border-bottom: 0.1px solid gray;
-    font-size: 15px;
+  cursor: pointer;
+  transition: 0.7s all ease;
+`;
+
+export const XPic = styled.img`
+  cursor: pointer;
+  height: auto;
+  width: 80%;
+`;
+
+export const SidebarWrapper = styled.div``;
+
+export const SidebarMenu = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 50px);
+  text-align: center;
+  margin-bottom: 67px;
+  padding: 0;
+
+  @media screen and (max-width: 380px) {
+    grid-template-rows: repeat(9, 40px);
   }
 `;
 
-export const SidebarIcons = styled.div`
-  width: 100%;
+export const SidebarLink = styled(Link)`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-`;
+  justify-content: center;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 
-export const SideBarIconLink = styled.a``;
-
-export const SideLI = styled(AiFillLinkedin)`
-  font-size: 1vw;
-  color: #0a2c4e;
-  transition: all 0.3s ease 0s;
-  :hover {
-    color: #007bff;
-    transition: all 0.3s ease 0s;
-  }
-  @media screen and (max-width: 690px) {
-    font-size: 30px;
-  }
-`;
-export const SidePH = styled(AiFillPhone)`
-  font-size: 1vw;
-  color: #0a2c4e;
-  transition: all 0.3s ease 0s;
-  :hover {
-    color: #007bff;
-    transition: all 0.3s ease 0s;
-  }
-  @media screen and (max-width: 690px) {
-    font-size: 30px;
-  }
-`;
-export const SideML = styled(AiFillMail)`
-  font-size: 1vw;
-  color: #0a2c4e;
-  transition: all 0.3s ease 0s;
-  :hover {
-    color: #007bff;
-    transition: all 0.3s ease 0s;
-  }
-  @media screen and (max-width: 690px) {
-    font-size: 30px;
+  &:hover {
+    color: #ffc32f;
+    transition: 0.2 ease-in-out;
   }
 `;
 
-export const SideIg = styled(AiFillInstagram)`
-  font-size: 1vw;
-  color: #0a2c4e;
-  transition: all 0.3s ease 0s;
-  :hover {
-    color: #007bff;
-    transition: all 0.3s ease 0s;
-  }
-  @media screen and (max-width: 690px) {
-    font-size: 30px;
+export const SidebarLink2 = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffc32f;
+    transition: 0.2 ease-in-out;
   }
 `;
+
+export const SideBtnWrap = styled.a`
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+`;
+
+export const SocialWrapper = styled.a`
+  width: 100%;
+  padding-top: 40px;
+  text-decoration: none;
+  @media screen and (max-width: 380px) {
+    padding-top: 20px;
+  }
+`;
+
+export const SocialText = styled.p`
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+`;
+
+export const SocialPics = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  margin: auto;
+`;
+
+export const SocialPic = styled.img``;

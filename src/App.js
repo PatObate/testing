@@ -1,77 +1,63 @@
 import React, { useState } from "react";
 import "./App.css";
-import { Route, Routes, useLocation } from "react-router-dom";
-import Intro from "./pages/Intro";
-import { AnimatePresence } from "framer-motion";
-import Support from "./pages/Support";
-import Special from "./pages/Special";
-import Menu from "./pages/Menu";
-import Peo from "./pages/Peo";
-import HrOut from "./pages/HrOutsourcing";
-import StaffingServices from "./pages/StaffingServices";
-import HrTechnology from "./pages/HrTechnology";
-import RemoteWorkforce from "./pages/RemoteWorkforce";
-import ExpertConsolting from "./pages/ExpertConsulting";
-import { Cursor } from "./css";
-import Loading from "./pages/Loading";
-import Hamburger from "./components/Hamburger";
-import Landing from "./pages/Landing";
-import About from "./pages/About";
-import Client from "./pages/Client";
+import "./style.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import { Route, Routes } from "react-router-dom";
+import ChatBot from "./components/ChatBot";
+import PopSaleEffect from "./components/PopSaleEffect";
+import Footer from "./components/Footer";
+import Activities from "./pages/Activities";
+import FAQ from "./pages/FAQ";
+import Blog1 from "./pages/Blog1";
+import Blog2 from "./pages/Blog2";
+import Blog3 from "./pages/Blog3";
+import ContactUs from "./pages/ContactUs";
+import Pricing from "./pages/Pricing";
 import Sidebar from "./components/Sidebar";
-import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
   return (
     <>
-      <Cursor
-        innerSize={10}
-        outerSize={10}
-        color="244, 244, 244"
-        outerAlpha={0.2}
-        innerScale={2}
-        outerScale={9}
-        clickables={[
-          "a",
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          "label[for]",
-          "select",
-          "textarea",
-          "button",
-          ".link",
-        ]}
-      />
-      <Hamburger toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <AnimatePresence exitBeforeEnter>
-        <Routes location={location} key={location.key}>
-          <Route path="/" element={<Intro />} />
-          <Route path="/intro" element={<Loading />} />
-          <Route path="/landing" element={<Landing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/support" element={<Support />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/special" element={<Special />} />
-          <Route path="/client" element={<Client />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/poeandeor" element={<Peo />} />
-          <Route path="/hroutsourcing" element={<HrOut />} />
-          <Route path="/staffingservices" element={<StaffingServices />} />
-          <Route path="/hrtechnology" element={<HrTechnology />} />
-          <Route path="/remoteworkforce" element={<RemoteWorkforce />} />
-          <Route path="/expertconsulting" element={<ExpertConsolting />} />
-        </Routes>
-      </AnimatePresence>
+      <Navbar toggle={toggle} />
+      <ChatBot />
+      <PopSaleEffect />
+      <ToastContainer />
+      <Routes>
+        <Route path="/" element={<Home />} preload={scrollTop} />
+        <Route
+          path="/privacy-policy"
+          element={<PrivacyPolicy />}
+          preload={scrollTop}
+        />
+        <Route path="/blog" element={<Blog />} preload={scrollTop} />
+        <Route path="/blog/blog1" element={<Blog1 />} preload={scrollTop} />
+        <Route path="/blog/blog2" element={<Blog2 />} preload={scrollTop} />
+        <Route path="/blog/blog3" element={<Blog3 />} preload={scrollTop} />
+        <Route
+          path="/activities"
+          element={<Activities preload={scrollTop} />}
+        />
+        <Route path="/faq" element={<FAQ />} preload={scrollTop} />
+        <Route path="/pricing" element={<Pricing />} preload={scrollTop} />
+        <Route path="/contact" element={<ContactUs />} preload={scrollTop} />
+      </Routes>
+      <Footer />
     </>
   );
 }

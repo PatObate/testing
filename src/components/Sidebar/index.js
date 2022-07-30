@@ -1,60 +1,77 @@
 import React from "react";
 import {
-  SidebarBackground,
   SidebarContainer,
-  SideBarIconLink,
-  SidebarIcons,
-  SideBarLink,
-  SideBarLogo,
-  SideIg,
-  SideLI,
-  SideML,
-  SidePH,
-  XIcon,
+  Icon,
+  SidebarWrapper,
+  SidebarMenu,
+  SidebarLink,
+  SideBtnWrap,
+  XPic,
+  SocialWrapper,
+  SocialText,
+  SocialPic,
+  SocialPics,
+  SidebarLink2,
 } from "./SidebarElements";
-import logo from "../../images/blue-logo.webp";
+import ig from "../../svg/blackig.svg";
 
-const Sidebar = ({ toggle, isOpen }) => {
+import X from "../../svg/xblack.svg";
+import { Btn1, BtnBlack, BtnGray } from "../HomeButton/HomeButtonElements";
+
+const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <>
-      <SidebarBackground toggle={isOpen} onClick={toggle}>
-        <XIcon onClick={toggle} toggle={isOpen} />
-        <SidebarContainer>
-          <div>
-            <SideBarLogo src={logo} />
-            <SideBarLink to="/landing">Home</SideBarLink>
-            <SideBarLink to="/about">About</SideBarLink>
-            <SideBarLink to="/contact">Contact Us</SideBarLink>
-            <SideBarLink to="/poeandeor">Peo & Eor Services</SideBarLink>
-            <SideBarLink to="/hroutsourcing">HR Outsourcing</SideBarLink>
-            <SideBarLink to="/staffingservices">Staffing Services</SideBarLink>
-            <SideBarLink to="/hrtechnology">HR Technology</SideBarLink>
-            <SideBarLink to="/remoteworkforce">Remote Workforce</SideBarLink>
-            <SideBarLink to="/expertconsulting">Expert Consulting</SideBarLink>
-          </div>
-          <SidebarIcons>
-            <SideBarIconLink
-              href="https://www.linkedin.com/company/nathan-&-nathan/"
-              target="_blank"
-            >
-              <SideLI />
-            </SideBarIconLink>
-            <SideBarIconLink href="tel:+971 4 354 4466">
-              <SidePH />
-            </SideBarIconLink>
-            <SideBarIconLink href="mailto:info@nathanhr.com">
-              <SideML />
-            </SideBarIconLink>
-            <SideBarIconLink
-              href="https://www.instagram.com/nathan_nathan.inc/"
-              target="_blank"
-            >
-              <SideIg />
-            </SideBarIconLink>
-          </SidebarIcons>
-        </SidebarContainer>
-      </SidebarBackground>
-    </>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
+        <XPic src={X} alt="X" />
+      </Icon>
+      <SidebarWrapper>
+        <SidebarMenu>
+          <SidebarLink to="/" onClick={toggle}>
+            Home
+          </SidebarLink>
+          <SidebarLink to="/faq" onClick={toggle}>
+            FAQ
+          </SidebarLink>
+          <SidebarLink to="/pricing" onClick={toggle}>
+            Pricing
+          </SidebarLink>
+          <SidebarLink to="/activities" onClick={toggle}>
+            Freelance Activities
+          </SidebarLink>
+          <SidebarLink to="/blog" onClick={toggle}>
+            Blog
+          </SidebarLink>
+          <SidebarLink to="/privacy-policy" onClick={toggle}>
+            Privacy
+          </SidebarLink>
+          <SidebarLink to="/contact" onClick={toggle}>
+            Contact Us
+          </SidebarLink>
+          <SidebarLink2
+            href="https://signup.dynamicfreelancer.ae/"
+            target="_blank"
+            onClick={toggle}
+          >
+            Sign Up
+          </SidebarLink2>
+        </SidebarMenu>
+        <SideBtnWrap href="tel:8003733">
+          <Btn1>
+            <BtnGray>Talk to an expert</BtnGray>
+            <BtnBlack>Call 800 FREE</BtnBlack>
+          </Btn1>
+        </SideBtnWrap>
+        <SocialWrapper
+          href="https://www.instagram.com/dynamicfreelancer/?hl=en"
+          target="_blank"
+        >
+          <SocialText>Follow Us On Instagram:</SocialText>
+          <SocialPics>
+            <SocialPic src={ig} alt="social media link" />
+          </SocialPics>
+        </SocialWrapper>
+      </SidebarWrapper>
+    </SidebarContainer>
   );
 };
 
