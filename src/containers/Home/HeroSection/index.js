@@ -3,10 +3,8 @@ import React, { useRef } from "react";
 import Lottie from "lottie-react";
 
 import { motion } from "framer-motion";
-import { gsap } from "gsap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 import "./index.css";
 

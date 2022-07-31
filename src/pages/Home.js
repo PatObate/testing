@@ -1,4 +1,5 @@
-import React, { useState,  } from "react";
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 import HeroSection from "../containers/Home/HeroSection";
 import HowSection from "../containers/Home/HowSection";
@@ -33,6 +34,25 @@ const Home = () => {
   return (
     <>
       <div>
+        <Helmet>
+          <meta />
+          <title>
+            Apply Your Freelance Visa with Dynamic Freelancer | UAE's most
+            comprehensive freelancing platform.
+          </title>
+          <meta
+            name="title"
+            content="Apply Freelance Visa in Dubai with the best freelancing platform in Dubai, Abu Dhabi, and UAE - Dynamic Freelancer | How to Apply, Visa Cost, Procedure and Eligibility - Complete Guide"
+          />
+          <meta
+            name="description"
+            content="Apply your freelancer visa in Dubai, Abu Dhabi, and UAE with Dynamic Freelancer. The best freelancing platform in Dubai UAE. Freelancing Platform with 120+ activities and invoicing support."
+          />
+          <meta
+            name="keywords"
+            content="freelancer visa dubai, freelancer visa, freelance visa, freelance visa in uae, freelancer visa uae, freelance permit dubai, dubai freelance license, freelance in dubai, dynamic freelancer, freelance visa in dubai, uae freelance visa, freelance license in dubai, freelance visa dubai, freelance permit uae, freelance license, freelance permit, cheapest dubai visa, dubai freelance visa"
+          />
+        </Helmet>
         <HomeButton />
         <ModalGetStarted
           showModal2={showModal2}

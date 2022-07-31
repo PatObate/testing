@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { gsap, Expo } from "gsap/all";
+import { gsap } from "gsap/all";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import addToRefs from "../../../service/addToRefs";
@@ -66,13 +66,12 @@ const SlideTwo = () => {
   const panels = useRef([]);
   const dotPagination = useRef([]);
   const panelsContainer = useRef(null);
-  let tween;
 
   function scrollAnimation() {
     const _numSections = panels.current.length - 1;
     const _snapVal = 1 / _numSections;
     let _lastIndex = 0;
-    tween = ScrollTrigger.matchMedia({
+    ScrollTrigger.matchMedia({
       "(min-width: 981px)": function () {
         gsap.to(panels.current, {
           yPercent: -100 * (panels.current.length - 1),

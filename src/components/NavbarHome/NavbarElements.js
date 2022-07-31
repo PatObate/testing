@@ -51,6 +51,7 @@ export const NavbarContainer = styled.div`
     justify-content: space-around;
   }
   @media screen and (max-width: 690px) {
+    justify-content: flex-start;
     max-width: 1100px;
     padding: 0px 20px;
   }

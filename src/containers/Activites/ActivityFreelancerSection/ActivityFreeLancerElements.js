@@ -172,7 +172,7 @@ export const ActivityFreeHeader = styled.h2`
 `;
 
 export const ActivityFreeMobSub = styled.div`
-  height: 134px;
+  height: 190px;
   width: 100%;
   display: flex;
   flex-direction: column;

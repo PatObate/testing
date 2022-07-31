@@ -5,7 +5,6 @@ import gsap from "gsap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 import {
   PlansContainer,
@@ -38,7 +37,6 @@ import {
   GoldText,
   GoldLabel,
   ButtonWrapper,
-  PlansVat,
   PlansMobileHeader,
   PlansMobileContent,
   CardWrapper,

@@ -99,7 +99,7 @@ export const CardContainer = styled.div`
   @media screen and (max-width: 690px) {
     justify-content: flex-start;
     width: 100%;
-    height: 695px;
+    height: 780px;
     padding: 29px 24px;
     border-radius: 19px;
   }
@@ -129,10 +129,10 @@ export const CardMobWrapper = styled.div`
   display: ${({ hide }) => (hide ? "flex" : "none")};
   transition: 0.7s all ease;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 80%;
 `;
 
 export const CardNav = styled.div`
@@ -143,6 +143,7 @@ export const CardNav = styled.div`
   font-weight: ${({ highlight }) => (highlight ? "700" : "500")};
   transition: 0.7s all ease;
   text-align: center;
+  font-size: 0.83vw;
   height: 100%;
   width: 100%;
   @media screen and (max-width: 980px) {

@@ -7,8 +7,6 @@ import {
   ButtonWrapperGreen,
   ButtonWrapperWhite,
   Btn1,
-  BtnExpert,
-  BtnNumber,
   BtnGray,
   BtnBlack,
   Btn2,

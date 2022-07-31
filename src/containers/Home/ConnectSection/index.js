@@ -6,7 +6,6 @@ import {
   ConnectContent,
   ConnectColumn,
   ConnectColumn2,
-  ConnectSub,
   ConnectHeader,
   ConnectKeys,
   ConnectIcon,

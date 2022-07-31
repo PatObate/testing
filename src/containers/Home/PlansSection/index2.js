@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Lottie from "lottie-react";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -39,7 +38,6 @@ import {
   GoldText,
   GoldLabel,
   ButtonWrapper,
-  PlansVat,
   PlansMobileHeader,
   PlansMobileContent,
   ButtWRapper,

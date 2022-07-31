@@ -76,11 +76,12 @@ export const BlogPageWrapper = styled.div``;
 
 export const BlogPageRow1 = styled.div`
   padding: 0vw 16.61vw 1.3vw 16.61vw;
+  width: 100%;
   @media screen and (max-width: 980px) {
     padding: 0px 50px 20px 50px;
   }
   @media screen and (max-width: 690px) {
-    padding: 0px 24px 20px 24px;
+    padding: 0px 50px 20px 50px;
   }
 `;
 
@@ -264,9 +265,8 @@ export const BlogPageNav2 = styled(NavLink)`
   }
 `;
 
-export const BlogPageP = styled.p`
+export const BlogPageP = styled.div`
   margin-bottom: 4.01vw;
-
   p {
     font-family: "Inter", sans-serif;
     font-weight: 300;
@@ -291,13 +291,6 @@ export const BlogPageP = styled.p`
       font-size: 14px;
       padding-bottom: 12px;
       line-height: 16px;
-    }
-  }
-  @media screen and (max-width: 690px) {
-    padding: 0px 24px 50px 24px;
-
-    p {
-      padding: 0px 24px 50px 24px;
     }
   }
 `;

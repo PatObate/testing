@@ -20,7 +20,6 @@ import logo from "../../svg/logo.svg";
 import { CgMenuLeftAlt } from "react-icons/cg";
 import {
   NavDown,
-  NavDrop,
   NavDrop2,
   NavDropBlock,
   NavDropContainer,

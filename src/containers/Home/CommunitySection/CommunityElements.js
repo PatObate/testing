@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import image from "../../../images/younggirlnew.png";
-import image2 from "../../../images/happy.png";
 import image3 from "../../../images/happygirlmob.png";
 import { Link } from "react-router-dom";
 
